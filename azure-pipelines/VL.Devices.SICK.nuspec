@@ -11,10 +11,10 @@
     <summary>A VL plugin to interact with SICK LIDARs</summary>
     <description>A VL plugin to interact with SICK LIDARs</description>
     <tags>lidar vl</tags>
-  </metadata>
-  <dependencies>
-    <dependency id="LMS1XX"/>
-  </dependencies>  
+    <dependencies>
+      <dependency id="LMS1XX"/>
+    </dependencies> 
+  </metadata> 
   <files>
     <file src="..\VL.Devices.SICK.vl" target="" exclude="" />
     <file src="..\examples\*vl" target="" exclude="" />
