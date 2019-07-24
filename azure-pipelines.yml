@@ -1,0 +1,35 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  branches:
+    include:
+    - master
+  paths:
+    exclude:
+    - README.md
+
+pool:
+  vmImage: 'windows-2019'
+
+steps:
+- task: NuGetToolInstaller@0
+  displayName: 'Nuget tool installer'
+  inputs:
+    versionSpec: 4.3.0 
+
+- task: NuGetCommand@2
+  displayName: 'NuGet pack'
+  inputs:
+    command: pack
+    packagesToPack: '**/*.nuspec'
+    versioningScheme: byPrereleaseNumber
+
+- task: NuGetCommand@2
+  displayName: 'NugGet push'
+  inputs:
+    command: push
+    nuGetFeedType: external
+    publishFeedCredentials: 'nuget'
