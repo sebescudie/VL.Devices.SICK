@@ -389,5 +389,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="FUIbJUKqE8mPudlC05aCA4" Location="VL.Skia" Version="2019.1.0-0411-gf6daa4918b" />
-  <DocumentDependency Id="NbWRVa69ChLOeA7d5tlBr0" Location="../../VL.Devices.SICK.vl" />
+  <DocumentDependency Id="JrUkGwkIiA6PPnjz2HRSkk" Location="../../../VL.Devices.SICK.vl" />
 </Document>
