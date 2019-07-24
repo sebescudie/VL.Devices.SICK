@@ -49,11 +49,6 @@
             <Pin Id="MD3uz0WmeeaLh148esgjFN" Name="Points" Kind="InputPin" Bounds="436,468" />
             <Pin Id="JytnE6SFc4OOTHEqi9eVKG" Name="Output" Kind="OutputPin" Bounds="424,601" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="Jh4lSsr2CPbLh1aV6npggJ">
             <Fragment Id="TA9QuuHAQDYLUXvXheFpCw" Patch="CcUWpxq6ZH7N9ahOGtWFeK" Enabled="true" />
             <Fragment Id="TVtRouF2rRgQMNussR1O4T" Patch="M7NczfOMHkMNrV5kc4DBIY" Enabled="true" />
@@ -237,11 +232,6 @@
           <Patch Id="J2EVzjB0NTwLKWaLxbPDjy" Name="Update">
             <Pin Id="J8HL0PtJbwaPaBAIztX7PX" Name="Output" Kind="OutputPin" Bounds="547,660" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="UVJqARcEuMlOAoj3x2YI5U">
             <Fragment Id="F6rOhFleOU7QNAecFaeSm0" Patch="V2Xk0uy0dlYNy82ogp4Wyr" Enabled="true" />
             <Fragment Id="Vpn7tK9C76RMuWC8XyHbH3" Patch="J2EVzjB0NTwLKWaLxbPDjy" Enabled="true" />
@@ -399,5 +389,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="FUIbJUKqE8mPudlC05aCA4" Location="VL.Skia" Version="2019.1.0-0411-gf6daa4918b" />
-  <DocumentDependency Id="N8kCOKbUnN5PHApUGzQsiu" Location="../VL.Devices.SICK.vl" />
+  <DocumentDependency Id="NbWRVa69ChLOeA7d5tlBr0" Location="../../VL.Devices.SICK.vl" />
 </Document>
