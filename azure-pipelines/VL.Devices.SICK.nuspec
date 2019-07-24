@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.Devices.SICK</id>
+    <version>$version$</version>
+    <title>VL.Devices.SICK</title>
+    <authors>sebescudie</authors>
+    <owners>sebescudie</owners>
+    <projectUrl>https://github.com/superbien/VL.Devices.SICK</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>A VL plugin to interact with SICK LIDARs</summary>
+    <description>A VL plugin to interact with SICK LIDARs</description>
+    <tags>lidar vl</tags>
+  </metadata>
+  <files>
+    <file src="..\VL.Devices.SICK.vl" target="" exclude="" />
+    <file src="..\examples\*vl" target="" exclude="" />
+  </files>
+</package>
