@@ -1,0 +1,2416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="NClwVL8Mha6MFL29qaEkbz" LanguageVersion="2019.1.0-0411-gf6daa4918b" Version="0.128">
+  <NugetDependency Id="GOIIH2OemXtMCmy8azD9aL" Location="VL.CoreLib" Version="2019.1.0-411" />
+  <Patch Id="AVNJ2mdLE30MZz7ZCH1beE">
+    <Canvas Id="Q5viJTkjnPDLlPyGjl7zWY" DefaultCategory="Devices.SICK" CanvasType="FullCategory">
+      <!--
+
+    ************************ LMS1XX ************************
+
+-->
+      <Node Name="LMS1XX" Bounds="376,238" Id="HymqmzrvuVpOiD00F6NuIw">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+          <Choice Kind="TypeFlag" Name="LMS1XX" />
+        </p:TypeAnnotation>
+        <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
+        <Patch Id="MeQUQ24nUWhMMkgABXMuIH">
+          <Canvas Id="CzTEW3mrVFQM8hsxDpWYvl" CanvasType="Group">
+            <!--
+
+    ************************ Create ************************
+
+-->
+            <Node Name="Create" Bounds="253,291,112,84" Id="URQm3WjbpRwQTz6CdQcbJ9">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="Kjm6EmkeJvrOgrZF8fNkf7">
+                <Node Bounds="265,323,65,26" AutoConnect="true" Id="Fb9wpydHgZpQYttJRbuMwI">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="Create" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                    <PinReference Kind="InputPin" Name="Ip Adress" />
+                  </p:NodeReference>
+                  <Pin Id="DMlikHZwwBaN5kGFGI3KLS" Name="Ip Adress" Kind="InputPin" />
+                  <Pin Id="QnP4qtit4snL0YwIwBTesC" Name="Port" Kind="InputPin" />
+                  <Pin Id="NHb46ZxVbhUMfnZl9ieju6" Name="Receive Timeout" Kind="InputPin" />
+                  <Pin Id="Qh8yTQNBu1yO9vZcf9yq48" Name="Send Timeout" Kind="InputPin" />
+                  <Pin Id="GoOhUkoBCDPPKZFlBukf47" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Pin Id="Ju1ztBT8bQHOZ1QLbk9Csj" Name="Ip Adress" Kind="InputPin" />
+                <Pin Id="IgpP19JWsKoPcb9DayxwsT" Name="Port" Kind="InputPin" />
+                <Pin Id="ETVV9DnMSvnOlNpbR7hHcq" Name="Receive Timeout" Kind="InputPin" />
+                <Pin Id="INFi7Efx2cENoGXSGhUZrp" Name="Send Timeout" Kind="InputPin" />
+                <Pin Id="UnBnMrxSRq8PxY5J0EWQTF" Name="Output" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Connect ************************
+
+-->
+            <Node Name="Connect" Bounds="264,654,126,84" Id="G8mCUvfWbKJNkHCC1ZUL6y">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="VYDPRJ1106lPVXAK6tMZIJ">
+                <Node Bounds="277,686,54,26" AutoConnect="true" Id="E0nd6fCdevRPE7Pya3eZ2c">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="Connect" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                  </p:NodeReference>
+                  <Pin Id="PgrsMpfxZjgMMx6JISVhXg" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="NZ2BY0XIibCNpV9Uor6Wg0" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="RxJqRmQB1MaNfK0j9whT4s" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="HBTV2HH2ZhDP1zptYVvcgD" Name="Input" Kind="InputPin" />
+                <Pin Id="LboqX0e9sFvNc02dXHTpUE" Name="Output" Kind="OutputPin" />
+                <Pin Id="N6xGodCB7xDLAhC9afukHv" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ ConnectAsync ************************
+
+-->
+            <Node Name="ConnectAsync" Bounds="723,639,112,88" Id="Mi4Sc3h1utkPVTv2JyVAG9">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="KoDa8JhYCtsOWpT3uvMOWV">
+                <Node Bounds="735,676,80,26" AutoConnect="true" Id="AgMTAoRuT5ULG7VKvFx6JH">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="ConnectAsync" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                  </p:NodeReference>
+                  <Pin Id="Geu2aFzbpF2MTeviFKd0oW" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="NWTQ1BKPeKfPY6gLKxQIPx" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="SvKmJGmnb2hPzelL8zxfeS" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="DlD3bggMho4PPaJMSZZMz0" Name="Input" Kind="InputPin" />
+                <Pin Id="OI28I6UhakrO1C8l5aeiDy" Name="Output" Kind="OutputPin" />
+                <Pin Id="LFVIrP8VOIuO6T24XBcF16" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Disconnect ************************
+
+-->
+            <Node Name="Disconnect" Bounds="459,652,124,80" Id="S2lCaDbCtcEMm3kno2W9s8">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="ASflr3gNAJhQRtVN8iFUlL">
+                <Node Bounds="471,681,67,26" AutoConnect="true" Id="JNehGs4umIrMfJoDPhVKOc">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="Disconnect" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                  </p:NodeReference>
+                  <Pin Id="ExExLMWbgatN7CNtzkk1mC" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="VBkgQmMkFzBMXIhEiiAWJC" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="I6WJqqx79BhLBSr3JyV0BG" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="AiVnRz1QO1FPlaqwjPkOo8" Name="Input" Kind="InputPin" />
+                <Pin Id="FaCynOmO4SgOwsfDplvy3x" Name="Output" Kind="OutputPin" />
+                <Pin Id="Rszy4OYZcHmLrtpaDRrnAu" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ ExecuteRaw ************************
+
+-->
+            <Node Name="ExecuteRaw" Bounds="272,936,94,80" Id="V4BRelIcT96PsEBTlu4HKf">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="Olp4eTkVMzAPGj9YJLVTQ4">
+                <Node Bounds="284,965,70,26" AutoConnect="true" Id="HrOWhPthWkJPpi0ge7zujl">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="ExecuteRaw" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                  </p:NodeReference>
+                  <Pin Id="EmbArobQKlzPm7sC8HosMx" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="ExLGrFE9JG5MTNk2fVuZs7" Name="Stream Command" Kind="InputPin" />
+                  <Pin Id="JllBpGgkEBhMRwBSc1r3Ht" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="FuqxXopQFLzLopsPSXA6PB" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="Lie9EULf54fL20jsVS5QcG" Name="Input" Kind="InputPin" />
+                <Pin Id="TU5sfpoH9FyPne1kZgce9I" Name="Stream Command" Kind="InputPin" />
+                <Pin Id="C6swiJj2sTkNxHmW4gqkw3" Name="Output" Kind="OutputPin" />
+                <Pin Id="EN1rv2yCldWNTl9BA1JTMc" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ ExecuteRawAsync ************************
+
+-->
+            <Node Name="ExecuteRawAsync" Bounds="724,940,121,80" Id="KPLIJG1izsZQFfqplL3hv2">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="KryO5DbYmosNF946JvIy9D">
+                <Node Bounds="736,970,97,26" AutoConnect="true" Id="IzuAOELIRXAN9THerm5RZa">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="ExecuteRawAsync" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                  </p:NodeReference>
+                  <Pin Id="GitExBbSVXaPLl52SnH6Lw" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="LVhuk0C343wMN1c6e23PO2" Name="Stream Command" Kind="InputPin" />
+                  <Pin Id="QR11NAQg74KNMphRkyFgBo" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="DC9GswgyfmiOwxftCOwXhC" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="HeD55ao7aC9NvI8X3QSMoY" Name="Input" Kind="InputPin" />
+                <Pin Id="QtZCKjkqARSLDLM7mCDf01" Name="Stream Command" Kind="InputPin" />
+                <Pin Id="GZ5ybtxGwGROfzpFi87IsN" Name="Output" Kind="OutputPin" />
+                <Pin Id="OUXeGl3Yh2dM2KPHhFIbav" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ IsSocketConnected ************************
+
+-->
+            <Node Name="IsSocketConnected" Bounds="254,441,138,84" Id="UGnncGaUjD7NOMHav6c0cb">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="QReTQWQNJLnLs5fHWvsejI">
+                <Node Bounds="266,473,102,26" AutoConnect="true" Id="ES7dg0h5HQHO3AibTh0ate">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="IsSocketConnected" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                  </p:NodeReference>
+                  <Pin Id="Nib2bG0MoX5LZWVRJxsVmI" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="MOJn3wvu78aPQV157L3VDk" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="Chghd3XplsDPaV7VGUtuwG" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="Uj7IPOHoEAGP1WyHeqKxpl" Name="Input" Kind="InputPin" />
+                <Pin Id="G1ko87xVUtKOGQiKDYzbeX" Name="Output" Kind="OutputPin" />
+                <Pin Id="Bw8k2F2KJmAL8jxlXtNPaD" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ LMDScandata ************************
+
+-->
+            <Node Name="LMDScandata" Bounds="469,943,112,80" Id="D19rOrnkt4NOid0AjG8XfL">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="LbG1jSafSeOM4RKABNOuPV">
+                <Node Bounds="481,972,77,26" AutoConnect="true" Id="PQsH3nSFHLrPMyHSUiP4CW">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="LMDScandata" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                  </p:NodeReference>
+                  <Pin Id="IKNIOXjHRWZOdZFEmAojpU" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="AFqPREv59H0MFyJqvXidFM" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="GMsIIS6DwyiLfq6YAGjVcA" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="E1lf0BC00TEOcclkE5ctcT" Name="Input" Kind="InputPin" />
+                <Pin Id="ESeGd2tnO92PfLrY5sB4i6" Name="Output" Kind="OutputPin" />
+                <Pin Id="GPO8kJT0jmXMFKfdaFzwZ3" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ LMDScandataAsync ************************
+
+-->
+            <Node Name="LMDScandataAsync" Bounds="724,1100,128,82" Id="JU7ZiW5CxwlPCN8cuEEpLh">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="Low3jdRjqdENnwpS80cQmo">
+                <Node Bounds="736,1130,104,26" AutoConnect="true" Id="IrJ5TCGdkRgQHDdyhjxu6M">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="LMDScandataAsync" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                  </p:NodeReference>
+                  <Pin Id="ASoksG0lJ02NXyVxLU2Ox2" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="VIyf6Gb2ffNMiQsyY9vbFc" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="RCIkRTSpdMyP8CtBk9urMW" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="K8xEPuWYstYLTjrvxAM9Fr" Name="Input" Kind="InputPin" />
+                <Pin Id="P27jIp5Rs6kPz1bpOZOJtI" Name="Output" Kind="OutputPin" />
+                <Pin Id="Hln8i5Za3yxN3dJqTWM3MC" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ LMDScandataFullModeAsync ************************
+
+-->
+            <Node Name="LMDScandataFullModeAsync" Bounds="898,1100,169,80" Id="OUkbfvCbgpzMlZgmvy4uZ8">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="Vw2afAed4wWMO7zFQPvclX">
+                <Node Bounds="910,1129,145,26" AutoConnect="true" Id="MuXROPjGnGfMXmrechuZXn">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="LMDScandataFullModeAsync" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                  </p:NodeReference>
+                  <Pin Id="R2UQ89Cb5sTLyeRsZmjhXF" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="UH6c8Gt1DsvOGIOaKLnhMy" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="LtabJHnefrCNFqV8p5DOE0" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="MSQEXLkhGOzPBYPt3v0CDV" Name="Input" Kind="InputPin" />
+                <Pin Id="CjfVEkZx0izNUGZ3gSI71H" Name="Output" Kind="OutputPin" />
+                <Pin Id="AP3owyTQlFKPkdqGKRQXpz" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ SetAccessMode ************************
+
+-->
+            <Node Name="SetAccessMode" Bounds="462,440,112,80" Id="JnQtFZysOPULYWIr17ffgY">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="G5vLRpwNozPQRDjbN2Lsd5">
+                <Node Bounds="474,469,86,26" AutoConnect="true" Id="BiN63m9QbStNZig6fMpTA7">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="SetAccessMode" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                  </p:NodeReference>
+                  <Pin Id="ViRdQBbD1jCLi50C7GM4Zk" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="UZhNYK2IgadLrpzPp4MH7I" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="D511JrgMnLCLXv2nAffhEk" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="BOCDM1wWv3NOsDO94rr3wj" Name="Input" Kind="InputPin" />
+                <Pin Id="HMoxRi8FX08NUQLJg1IvUt" Name="Output" Kind="OutputPin" />
+                <Pin Id="NitDdWIwgDUPD47laIXumt" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ SetAccessModeAsync ************************
+
+-->
+            <Node Name="SetAccessModeAsync" Bounds="892,940,136,80" Id="Filk411FdRtPoeliyDzQ53">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="NNCyREkIH7pP5CsOCxlPo3">
+                <Node Bounds="904,968,112,26" AutoConnect="true" Id="E3iwuHZKER4OIOlpQfnQhZ">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="SetAccessModeAsync" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                  </p:NodeReference>
+                  <Pin Id="O6dzu8KiofWQMjc7sXZMMp" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="J66p0sHSwK1OWMSGd74UKo" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="BGGxg4pFo0uLKOZWyEzhc8" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="OKwsBauvjNvNvYxuhbNUww" Name="Input" Kind="InputPin" />
+                <Pin Id="Kp7D8xBChSKMK7VynSlouI" Name="Output" Kind="OutputPin" />
+                <Pin Id="Qru5rY51OH9O3hYe7BuXzV" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Start ************************
+
+-->
+            <Node Name="Start" Bounds="265,791,118,80" Id="Vwt6CQeZNawOBkYi8YSB9m">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="OKgcHWFKWURPBZm4SzXcL1">
+                <Node Bounds="283,820,44,26" AutoConnect="true" Id="IeMD9POSdrzQCYaYq1IaM8">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="Start" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                  </p:NodeReference>
+                  <Pin Id="PKEEoccMPAoP7UqxhqutfO" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="SY61pFyllCmLymaRzJqSoM" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="U6rTZ0uEK2OLPCD8IHOfIm" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="Don6ocHnRNlNxKxCdhxpXv" Name="Input" Kind="InputPin" />
+                <Pin Id="Uf0VcACqnN3OV2kEzQUMM2" Name="Output" Kind="OutputPin" />
+                <Pin Id="HGMXm4chtDnMmEI8dAIpnF" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ StartAsync ************************
+
+-->
+            <Node Name="StartAsync" Bounds="723,780,112,80" Id="E884HbglVsMLh8VUVuzsjG">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="D2dGmdH6xQdNGPjnmfA2bb">
+                <Node Bounds="735,812,64,26" AutoConnect="true" Id="OAKSymS5RQOLpfwZmAonXc">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="StartAsync" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                  </p:NodeReference>
+                  <Pin Id="Pz4JUHjpvlHMxdBZrQp4Fr" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="RyoAgOxHDQ9M24QPZXsCSu" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="GGM7H1MSFFvOiaNDFwRn5v" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="RZsCH2cyasPNYw5bBqDKgL" Name="Input" Kind="InputPin" />
+                <Pin Id="QZ7e2MQAr8YP868SIV1Rtt" Name="Output" Kind="OutputPin" />
+                <Pin Id="HVfMV4ISrBrLxPcF1T9W2B" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ Stop ************************
+
+-->
+            <Node Name="Stop" Bounds="464,799,118,80" Id="GchzyIanaGJO3NJ27fwvcn">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="Mdb6NvNLpsfPZ3KmzpRRud">
+                <Node Bounds="482,828,44,26" AutoConnect="true" Id="B4MZrjeGx5sNk6tgpHmYKV">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="Stop" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                  </p:NodeReference>
+                  <Pin Id="OtFygPNy4hKMqrtBcIB519" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="LmYitxtE5vwM7PqwSstPWL" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="F2uSIxuhgU5NPpVxvM6KiI" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="SD3rzNaFXHkOnAb7lGBAaz" Name="Input" Kind="InputPin" />
+                <Pin Id="MVapMJmVi0UOM0dRYQgbp2" Name="Output" Kind="OutputPin" />
+                <Pin Id="SAXpDMmhuKRNjxRPkXUg8Z" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ StopAsync ************************
+
+-->
+            <Node Name="StopAsync" Bounds="863,780,112,80" Id="Rvr24uOKPVrNhm888O7N00">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="IigMgXGwZYMNm0vaLmGoxc">
+                <Node Bounds="875,809,63,26" AutoConnect="true" Id="GqhhNLADWfqPXNTq0qBu8y">
+                  <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                    <Choice Kind="OperationNode" Name="StopAsync" />
+                    <FullNameCategoryReference ID="LMS1XX.LMS1XX" />
+                  </p:NodeReference>
+                  <Pin Id="DQiYzXPXgj1NVBhD03lH6g" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="F5vHEDINkSpQAPasyBl3qP" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="GdwabnGATj7LlWxadOSzkT" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="AegWWj696SuNP2gKfMCrzo" Name="Input" Kind="InputPin" />
+                <Pin Id="T61ohq5jeNyL0R1ci5ea11" Name="Output" Kind="OutputPin" />
+                <Pin Id="JV0CENnXa0tMqA49DOKiQa" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <Overlay Id="E5GKoe6iootOlY3WZGE5tv" Name="Async" Bounds="649,562,626,663" />
+            <Overlay Id="R8yQm8Oop58MVGk4EpBnaj" Name="Sync" Bounds="183,562,451,512" />
+            <!--
+
+    ************************ LMDScandataResult ************************
+
+-->
+            <Node Name="LMDScandataResult" Bounds="268,1307" Id="GPoisxeyAlhOCmzwpOaXBU">
+              <p:NodeReference>
+                <Choice Kind="ForwardDefinition" Name="Forward" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:TypeAnnotation LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                <Choice Kind="TypeFlag" Name="LMDScandataResult" />
+              </p:TypeAnnotation>
+              <Patch Id="Dhz7S4DQedePmYsOvOvv2f">
+                <Canvas Id="IDPVRv6EgSHLvyQdwplLbr" CanvasType="Group">
+                  <!--
+
+    ************************ AmountOf16BitChannels ************************
+
+-->
+                  <Node Name="AmountOf16BitChannels" Bounds="198,289,325,120" Id="N1nRZxSKa3eQF2vKlJTrrs">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="FLquIv1dw1xNQDOFzNwjM1">
+                      <Node Bounds="210,312,128,26" AutoConnect="true" Id="D7vaHKpvsY1QItxi3WmYjw">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="AmountOf16BitChannels" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="JFulpo0IJOCM1wzrywa176" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="EtA3NeL13OHNpRP7VzMaUg" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="RdN2UKKYUR9OEMRdLRDXIq" Name="Amount Of 16Bit Channels" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="KQHANOn7RxJLO46LJXgcYk" Name="Input" Kind="InputPin" />
+                      <Pin Id="IyBuJv86z2RNz8VK9FWU6W" Name="Amount Of 16 Bit Channels" Kind="OutputPin" />
+                      <Node Bounds="333,348,46,26" Id="Olw1pmgYnejLzYXPiPxZ4k">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="Ek5UX22bIK6OVHucwLWsZq" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="RnPEHiSeaqLL8CO7a3KD54" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="Q9RUml0GPEnO8C6rQEVhgZ" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <Link Id="P0fyNKoTv4RPxe4jD3jIRv" Ids="RdN2UKKYUR9OEMRdLRDXIq,Ek5UX22bIK6OVHucwLWsZq" />
+                      <ControlPoint Id="LLtN7u3MDj4MJQRW6JvpvV" Bounds="376,392" />
+                      <Link Id="Fct53r3l3VwNWLqM5ZJvRV" Ids="Q9RUml0GPEnO8C6rQEVhgZ,LLtN7u3MDj4MJQRW6JvpvV" />
+                      <Link Id="NyJwWLxXOS8Pr1vQhGgY0U" Ids="LLtN7u3MDj4MJQRW6JvpvV,IyBuJv86z2RNz8VK9FWU6W" IsHidden="true" />
+                      <Pin Id="HgE8ijw8eW6PapRc15jWaF" Name="Output" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ AmountOfData ************************
+
+-->
+                  <Node Name="AmountOfData" Bounds="628,289,233,120" Id="QaViUROeO6xLfZTul0B9cW">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="M3w9PI6x1pqMvLTNiei603">
+                      <Node Bounds="640,312,86,26" AutoConnect="true" Id="Kpp3NA8KjKmPlBXVqTmIPe">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="AmountOfData" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="Mq4B5viSFPePEabBc1EmMF" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="Nc0OWO22UnXLJYY7hXuuGh" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="IV5G6WwjMOLQR9KMLNkR5K" Name="Amount Of Data" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="PIp5pMsflCwNMbGmyTn7hw" Name="Input" Kind="InputPin" />
+                      <Pin Id="NydOSX6lX9NODt0GZoIC9X" Name="Output" Kind="OutputPin" />
+                      <Pin Id="FsOmRNYMwTyPFWMkKE1sg9" Name="Amount Of Data" Kind="OutputPin" />
+                      <Node Bounds="721,348,46,26" Id="El8yKAUgbtuOAYpe9XKJCo">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="FZlaAcjhcNLPGhEXEHXHyv" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="J63W1ZW4LFkOTZpsWwkNHW" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="EQsg8FUHWjNLnIihJLpvBy" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="T8V54Z25TY6PX2JXVl6xN3" Bounds="764,392" />
+                      <Link Id="Gh8jz1Iy4gWQcIjAacXBED" Ids="EQsg8FUHWjNLnIihJLpvBy,T8V54Z25TY6PX2JXVl6xN3" />
+                      <Link Id="S5FHRoaz8bLMCr5ZFOEQt5" Ids="T8V54Z25TY6PX2JXVl6xN3,FsOmRNYMwTyPFWMkKE1sg9" IsHidden="true" />
+                      <Link Id="QL26486QjdZOVbusp2vYJo" Ids="IV5G6WwjMOLQR9KMLNkR5K,FZlaAcjhcNLPGhEXEHXHyv" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ AmountOfEncoder ************************
+
+-->
+                  <Node Name="AmountOfEncoder" Bounds="998,289,261,121" Id="JCLTwqAlCdlL34RnXzqoio">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="BFkumchSADMPHSfSwZgVdu">
+                      <Node Bounds="1010,312,99,26" AutoConnect="true" Id="UrwDGfmyHmDMomtgh0Hx7T">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="AmountOfEncoder" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="Ak9c51O0Qt8OKsLMaLnbGI" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="OKlsvKs4OrgPeWpEdaJ6j7" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="Gx0NYJl7JqYPBxElAS6mwk" Name="Amount Of Encoder" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="CYSqJCH2qQDOatA83LDiSK" Name="Input" Kind="InputPin" />
+                      <Pin Id="JIbXcewJ6gkP5h4enpl7QH" Name="Output" Kind="OutputPin" />
+                      <Pin Id="IP4HNQSJkZOPiIWNhpcAPo" Name="Amount Of Encoder" Kind="OutputPin" />
+                      <Node Bounds="1104,349,46,26" Id="SUvt6x8sU4nPtvNfOTwkj0">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="AWppk3065BaO9gP2Et57Bv" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="OZWXKOei5NsOFoDFGZ2iAG" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="BW1n2M45VPeLrP6CW7CpZa" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="LqYFckGzrHjPpWTTprlCZb" Bounds="1147,393" />
+                      <Link Id="NJOcoLHoi9xMAEe0SBNeZc" Ids="BW1n2M45VPeLrP6CW7CpZa,LqYFckGzrHjPpWTTprlCZb" />
+                      <Link Id="Guh4pHLPdBELOLp0j8MRcV" Ids="LqYFckGzrHjPpWTTprlCZb,IP4HNQSJkZOPiIWNhpcAPo" IsHidden="true" />
+                      <Link Id="A88ER7w8bULPiXXvIUrYva" Ids="Gx0NYJl7JqYPBxElAS6mwk,AWppk3065BaO9gP2Et57Bv" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ Command ************************
+
+-->
+                  <Node Name="Command" Bounds="1368,284,110,80" Id="KaRrty2LnloLxnPZ0tRJEz">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="Vks0D2nNwvdPb60Z1rASyz">
+                      <Node Bounds="1380,312,86,26" AutoConnect="true" Id="HFkzRtXxTEBLGGw0orIWfw">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="Command" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="HzydI7V1wHPPK9bWCEoeaQ" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="FlSswLSODDvQZpvbOgDHVH" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="R7duxBN6JEOMobALhXk78e" Name="Command" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="D5HjTnM9zVvPfdC2nTfarN" Name="Input" Kind="InputPin" />
+                      <Pin Id="Tk8fRkplDbHMl2GTlJQrqP" Name="Output" Kind="OutputPin" />
+                      <Pin Id="GCbf8YEJRSpLmDA93jVlTI" Name="Command" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ CommandType ************************
+
+-->
+                  <Node Name="CommandType" Bounds="1723,284,112,80" Id="MhYGpiiAO5gOsBUzC7HK93">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="RI8kFf1AidQO5o3bqWePUF">
+                      <Node Bounds="1735,312,86,26" AutoConnect="true" Id="JLdDuqlajCHPqq4x5M9R4m">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="CommandType" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="SYUNbi8sMXlPf1uKOisUNd" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="FxGGg5gD4PFPse6aZayUBT" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="CTsDzwjOFZnOjquMtmMCIw" Name="Command Type" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="JN1VN6ukG9oM5p6QiA1txA" Name="Input" Kind="InputPin" />
+                      <Pin Id="LveA6cJf7gDQEZ2ZBLq7dF" Name="Output" Kind="OutputPin" />
+                      <Pin Id="Jk0fA8s0DleNG54bATv4w9" Name="Command Type" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ Content ************************
+
+-->
+                  <Node Name="Content" Bounds="198,493,112,80" Id="EbV9920r7OLO6RV0hh9rgY">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="FgyqbAJE025Os2R4gOs7SK">
+                      <Node Bounds="210,522,86,26" AutoConnect="true" Id="SwzvM8O0O9JNM5U3TkYHDp">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="Content" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="LQuWdo87P5WOosaGcwm8Ig" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="BIYoqbmSWUrLY4OH1auXfQ" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="MlcH2USO2qRO9sJsyg7PGZ" Name="Content" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="CfPAICMMFx4QOoX7UX1y3q" Name="Input" Kind="InputPin" />
+                      <Pin Id="Guo15bErlSRPjQUhB5E6aa" Name="Output" Kind="OutputPin" />
+                      <Pin Id="JNOJNTzl1QkNqskBws1PfX" Name="Content" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ DeviceNumber ************************
+
+-->
+                  <Node Name="DeviceNumber" Bounds="628,499,283,115" Id="NjCHTHPhI9SMBmuXisOwUr">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="PicinLSlhSPMMpNbnrJmO8">
+                      <Node Bounds="640,522,86,26" AutoConnect="true" Id="H1YqLhSsyM7PL1IEAI3Y7F">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="DeviceNumber" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="BqliYsHsyk0NCUYr0Np8Ba" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="CqKIoc7mAVqPuYtz3Dycl2" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="IBxEeERTXvNNrPrFgVtmjY" Name="Device Number" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="CRwTvz1FvCFMjEcjsXgcfE" Name="Input" Kind="InputPin" />
+                      <Pin Id="O1nkPy9EabhNhUY1wsnT3F" Name="Output" Kind="OutputPin" />
+                      <Pin Id="D0oQ9jCEYtbPlWOsUEx6t8" Name="Amount Of 16 Bit Channels" Kind="OutputPin" />
+                      <Node Bounds="721,553,46,26" Id="UhCAsWpGYRwLUcyzzCLZFX">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="T80pXOW3AyINPqQiFPn4hU" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="Ispwm1U1EPkMvA4E7eHkOB" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="NYA0SaL7eLNQayustsKRU0" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="TMUgkWEhIf1N50C7C9aOLx" Bounds="764,597" />
+                      <Link Id="GQtmZsatkwYPcFvAvuhv1x" Ids="NYA0SaL7eLNQayustsKRU0,TMUgkWEhIf1N50C7C9aOLx" />
+                      <Link Id="Ck2kEv3QdLhMdfXaqWCdJB" Ids="TMUgkWEhIf1N50C7C9aOLx,D0oQ9jCEYtbPlWOsUEx6t8" IsHidden="true" />
+                      <Link Id="LLslp1XRsGjNOQydu6OMbV" Ids="IBxEeERTXvNNrPrFgVtmjY,T80pXOW3AyINPqQiFPn4hU" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ DeviceStatus ************************
+
+-->
+                  <Node Name="DeviceStatus" Bounds="1005,493,112,80" Id="MWTOi34eNovM8lXmtqHjps">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="Pe3SgGMcjbYL78YEJGkJdy">
+                      <Node Bounds="1017,522,86,26" AutoConnect="true" Id="KYpLTqZ7ghMLJAvO1ZGM68">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="DeviceStatus" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="MXfoCJe5gBYOg5mr7FhUjA" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="HL7LMTqtpV0O1PhNqIVeg2" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="SmKUpIkwjb2LSmlxteeovl" Name="Device Status" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="UvV9rf8JOqSPkv16bjYt2D" Name="Input" Kind="InputPin" />
+                      <Pin Id="FGW3juCM1mBOGLHnLr3Wqu" Name="Output" Kind="OutputPin" />
+                      <Pin Id="OkuIpdUHm57O3LFcwpRJy0" Name="Device Status" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ DistancesData ************************
+
+-->
+                  <Node Name="DistancesData" Bounds="1375,499,188,122" Id="VFqagYnhPTPMRRJKPhm8sn">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="VzoAsfEmAQ7M0oWiSqdaDB">
+                      <Node Bounds="1387,522,86,26" AutoConnect="true" Id="AhZJ0IeMOU7QRXv7AlfirK">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="DistancesData" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="ILTZnWFPWv3Ocy4fFWA4Sf" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="Db4LnaTNRRkLj7NpGBN1JZ" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="DlRGkX0hkeZMtZ3omF6Guw" Name="Distances Data" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="FJfI8YyOCW3P8OqGWP7q0f" Name="Input" Kind="InputPin" />
+                      <Pin Id="FpIZUqixuC2PIZrdUp5e8o" Name="Output" Kind="OutputPin" />
+                      <Node Bounds="1468,562,83,26" Id="PEnKjjTIEDmPtrl8aWYBSK">
+                        <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="RecordType" Name="Spread" />
+                          <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                        </p:NodeReference>
+                        <Pin Id="Nk1bnYitr0SP8C9ytiOO1q" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="SiSIagZq4nyLekXjvVOum5" Name="Result" Kind="OutputPin" />
+                      </Node>
+                      <Link Id="HKWiE7tnLxCQZ9fEdYBEYg" Ids="DlRGkX0hkeZMtZ3omF6Guw,Nk1bnYitr0SP8C9ytiOO1q" />
+                      <ControlPoint Id="Euzz0DrUMkuNvhNCj7eKkF" Bounds="1470,604" />
+                      <Link Id="E19udMS0lKCNnQ4JImAFoC" Ids="SiSIagZq4nyLekXjvVOum5,Euzz0DrUMkuNvhNCj7eKkF" />
+                      <Pin Id="IQ9o6HChNmnMPwLgmv7XOw" Name="Distances Data" Kind="OutputPin" Bounds="1353,604" />
+                      <Link Id="LbPnok1GlOxMsZ4cqAFLpG" Ids="Euzz0DrUMkuNvhNCj7eKkF,IQ9o6HChNmnMPwLgmv7XOw" IsHidden="true" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ EncoderPosition ************************
+
+-->
+                  <Node Name="EncoderPosition" Bounds="1730,499,238,117" Id="LmZG0dCaM7XLLGrtAOl5zD">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="V72TsM9fx0WNVMk2oQ5cuF">
+                      <Node Bounds="1742,522,89,26" AutoConnect="true" Id="ClnWfaB3ORcPSNv04hVuqe">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="EncoderPosition" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="NjdIRxh8CtCMlzLJOyUy8O" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="RmQQpgwW5ojLBysuuDe3uS" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="QNhcJhIfgyJMePAB5ozqwm" Name="Encoder Position" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="D0mGAUlpxc7OPSvr5OIy2J" Name="Input" Kind="InputPin" />
+                      <Pin Id="Jfhlb2poK23N03WajDX5ek" Name="Output" Kind="OutputPin" />
+                      <Pin Id="IKraYwZPEIvOCPB2V3cz86" Name="Encoder Position" Kind="OutputPin" />
+                      <Node Bounds="1826,555,46,26" Id="LROl9kuwKznQa0k2HVhpsV">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="BhjyipZGct2Lx6Ai2EmsGf" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="M5l12eMcpObM8wHNUhWPRr" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="QKeLhB2FG3KPgozMd4oITe" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="JWUsCGL4ErfMLWFlEhTam9" Bounds="1869,599" />
+                      <Link Id="TYSwtWgvyvQP1AVOY2OVGT" Ids="QKeLhB2FG3KPgozMd4oITe,JWUsCGL4ErfMLWFlEhTam9" />
+                      <Link Id="KpSK0KhLXrGPszC9IjIWgq" Ids="JWUsCGL4ErfMLWFlEhTam9,IKraYwZPEIvOCPB2V3cz86" IsHidden="true" />
+                      <Link Id="CSGFpstk0CGLpxQtnGq73D" Ids="QNhcJhIfgyJMePAB5ozqwm,BhjyipZGct2Lx6Ai2EmsGf" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ EncoderSpeed ************************
+
+-->
+                  <Node Name="EncoderSpeed" Bounds="198,724,226,116" Id="THjYRKolQCsM5K9LENFPQ1">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="DhlcQxE5k3GQTHS6C5Zcte">
+                      <Node Bounds="210,747,86,26" AutoConnect="true" Id="FbYLqzUGpIIQYaJKewdzHv">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="EncoderSpeed" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="HDlkYvDl6NLQYOYn892rQG" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="SxqbiwLBVNnNbjMjUJFStp" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="CBtmRn6FHurOqZSGxL1yDa" Name="Encoder Speed" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="GbYnJdYzXghPkK53uVlwIx" Name="Input" Kind="InputPin" />
+                      <Pin Id="UyDTxI1Ows9QFSffa4KCpl" Name="Output" Kind="OutputPin" />
+                      <Pin Id="ItZlpzojGefNgk8vlRZ0DT" Name="Encoder Speed" Kind="OutputPin" />
+                      <Node Bounds="291,779,46,26" Id="UP6yojRFh2hQZcWABuQXHg">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="O85AKXjEbdpLdh8k1EGFOW" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="JqtbE5VVAiHPCXo8I7rern" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="R3APUeYCmzmPiAsJPhuUVu" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="VMfZk56OCfyO4m2Y6be1mM" Bounds="334,823" />
+                      <Link Id="Clgiu3djsd5O1qPKAu3MTV" Ids="R3APUeYCmzmPiAsJPhuUVu,VMfZk56OCfyO4m2Y6be1mM" />
+                      <Link Id="UJC8vhFaByFNTmY0xp0iqW" Ids="VMfZk56OCfyO4m2Y6be1mM,ItZlpzojGefNgk8vlRZ0DT" IsHidden="true" />
+                      <Link Id="LP8hbIsBQU9MQljfluLfSN" Ids="CBtmRn6FHurOqZSGxL1yDa,O85AKXjEbdpLdh8k1EGFOW" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ ErrorException ************************
+
+-->
+                  <Node Name="ErrorException" Bounds="628,718,112,80" Id="KaRjvlvloNYLDvYioRUQDZ">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="VmRmBbhre2hOEvgIqgTcb3">
+                      <Node Bounds="640,747,86,26" AutoConnect="true" Id="Ispwb73Bo1JL69Qrhun89V">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="ErrorException" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="GuW1B0W3u8nNSSfcLZlumE" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="G8igaezJa2hMb5xukG9iCO" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="O1kEZja6DrhLmiOHGtDxs0" Name="Error Exception" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="Lhph6C8tozzN3t98WcHL1e" Name="Input" Kind="InputPin" />
+                      <Pin Id="TwbGC1yasOIP2QkVmHW5jS" Name="Output" Kind="OutputPin" />
+                      <Pin Id="HzzGcPNahK1P2cwh2xh1jX" Name="Error Exception" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ IsError ************************
+
+-->
+                  <Node Name="IsError" Bounds="1005,718,110,80" Id="HiSvhi9w64FM6wK2ATkow5">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="OFqTY3u1z0LLlmRhWmc7hn">
+                      <Node Bounds="1017,747,86,26" AutoConnect="true" Id="LgM1btHw3kjORXhvKLdtD1">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="IsError" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="U8N305ZZUsvNdhDFAKLXaX" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="DojdfKEZmNNLhYwJkZIQQA" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="VjyNyAhNnlMLiedjGDqEUn" Name="Is Error" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="RffC5DZ14bPNHnCKQ2wj9y" Name="Input" Kind="InputPin" />
+                      <Pin Id="TmaBs2pPzGwOalxEcVLrPD" Name="Output" Kind="OutputPin" />
+                      <Pin Id="UiKITMGl55aLStV6jKulQD" Name="Is Error" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ MeasurementFrequency ************************
+
+-->
+                  <Node Name="MeasurementFrequency" Bounds="1375,724,286,118" Id="G9rjpcBtnwoN0eVusM9srK">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="M64PM4aZGLnNiIYFRuuPDj">
+                      <Node Bounds="1387,747,124,26" AutoConnect="true" Id="Hn7hjXBi65xN6dWE1MLoHf">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="MeasurementFrequency" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="MfTTjytk3DGM3JcZLBrBIQ" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="Gv3zCR0fjKnONXjoq8FUue" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="Gpevm3jE9ZYNwD21kWaKLM" Name="Measurement Frequency" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="O0y7pW6B01CLjsM1fEdum9" Name="Input" Kind="InputPin" />
+                      <Pin Id="M29MJcNIf3jMUAkKYcJpOS" Name="Output" Kind="OutputPin" />
+                      <Pin Id="TGpm4HAUMKtNn1LPilc9e9" Name="Amount Of Encoder" Kind="OutputPin" />
+                      <Node Bounds="1506,781,46,26" Id="KL9Iw5rh8PwPpM5ZJqlq67">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="K4CT7gAxr1JPhzP1laIUSk" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="LlWGxcY2cJYNjYigWA0dYk" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="K8oREKd4YbMLSTbx5NwHg0" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="T9r7xkQfqJnPLppKtFXFlt" Bounds="1549,825" />
+                      <Link Id="Ei45DO8OfpILVNN6rLq2Mk" Ids="K8oREKd4YbMLSTbx5NwHg0,T9r7xkQfqJnPLppKtFXFlt" />
+                      <Link Id="SdyO9VfNwilN0JuBc4ROOi" Ids="T9r7xkQfqJnPLppKtFXFlt,TGpm4HAUMKtNn1LPilc9e9" IsHidden="true" />
+                      <Link Id="SqGMbw6d0YrO2W8FN8ekrD" Ids="Gpevm3jE9ZYNwD21kWaKLM,K4CT7gAxr1JPhzP1laIUSk" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ RawData ************************
+
+-->
+                  <Node Name="RawData" Bounds="1730,724,188,122" Id="Jl5eioMaZF6QDy5kPXxY0y">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="S2kjJ4MQnbnND7Cr11Ad3E">
+                      <Node Bounds="1742,747,86,26" AutoConnect="true" Id="Bh0rWbNdVSLNIfx8zrkqgd">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="RawData" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="Soy2o4JDvMtNxvKEIhRVCb" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="Con1YmC66aIPXgK4ZDZ1ba" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="UIvcAzaih4CLvwrpz5wH0P" Name="Raw Data" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="CWQZr7brejYP4rnXc9YBSN" Name="Input" Kind="InputPin" />
+                      <Pin Id="IJnRGk4Em5EPfaXxoiJKRq" Name="Output" Kind="OutputPin" />
+                      <Node Bounds="1823,783,83,26" Id="ImbuThiUv3WMVAQEygm92I">
+                        <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="RecordType" Name="Spread" />
+                          <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                        </p:NodeReference>
+                        <Pin Id="EWJOFik0rczMOZ3IurjBPg" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="J2gIeGZqKyCO0pAMsFeUi7" Name="Result" Kind="OutputPin" />
+                      </Node>
+                      <Link Id="CvxzA2InARcORb4yjpimN1" Ids="UIvcAzaih4CLvwrpz5wH0P,EWJOFik0rczMOZ3IurjBPg" />
+                      <ControlPoint Id="SqjfUyDdzICOiCGoyce3I3" Bounds="1825,829" />
+                      <Link Id="HuB1VgRrRCOLRsllVnUVHH" Ids="J2gIeGZqKyCO0pAMsFeUi7,SqjfUyDdzICOiCGoyce3I3" />
+                      <Pin Id="KvWZB7CFmN2O7fyb9oaWJ2" Name="Raw Data" Kind="OutputPin" Bounds="1705,818" />
+                      <Link Id="CjHYIS7kfjJN5VyGVYjGoj" Ids="SqjfUyDdzICOiCGoyce3I3,KvWZB7CFmN2O7fyb9oaWJ2" IsHidden="true" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ RawDataString ************************
+
+-->
+                  <Node Name="RawDataString" Bounds="198,927,112,80" Id="VO4Dcw1PavoONMqnJ7au3X">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="FmbfhiwF6MaMSjkMuvz9zU">
+                      <Node Bounds="210,956,86,26" AutoConnect="true" Id="ItKqTqOWsHxL50xPM69T06">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="RawDataString" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="R4weIwgprQLLH2YUpG5vut" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="Om3Z1p7OMRZN9VVdgX9uAr" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="TVNgDMbnQFUOpE5sILfzSf" Name="Raw Data String" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="RpysR70XzhSMqrtALWLrAU" Name="Input" Kind="InputPin" />
+                      <Pin Id="L0VNEhWlqlZOy5aSuCwbFz" Name="Output" Kind="OutputPin" />
+                      <Pin Id="AnEsEu05bt3NH8oqNjPNOm" Name="Raw Data String" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ Reserved ************************
+
+-->
+                  <Node Name="Reserved" Bounds="628,933,200,119" Id="B0DcTvD8lOkPYdqL5IG47K">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="RLrzk0TqPyNOhLbIfU0slx">
+                      <Node Bounds="640,956,86,26" AutoConnect="true" Id="EFAQyvl2UC0LzeIpz4zPK8">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="Reserved" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="KSUvVF0nVkQMQD1eSispDn" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="CAuJPFIQNarLzoF3e9rTdI" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="IhF918mQxzIPIybzAeMxi7" Name="Reserved" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="SK4rUfYJy4SQM1FQKzPjsq" Name="Input" Kind="InputPin" />
+                      <Pin Id="Sp0QKZHviu8NGHFkr9KQl4" Name="Output" Kind="OutputPin" />
+                      <Pin Id="VzhI3p9euY9PbXUTAXOnuF" Name="Reserved" Kind="OutputPin" />
+                      <Node Bounds="721,991,46,26" Id="COYisTPWRArOLhPxaTWntP">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="TVCivMU0NJDMfqrXEywr7u" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="KhurEAg3hxZL8TJocB80vO" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="TjL7yCjC1GmPSVqiwFThJy" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="DwgReORsFJbQcTMRoZ3OmF" Bounds="764,1035" />
+                      <Link Id="LEqhDwGL0l4LHTVf9adHAe" Ids="TjL7yCjC1GmPSVqiwFThJy,DwgReORsFJbQcTMRoZ3OmF" />
+                      <Link Id="FlyCDVHxsrpPoGZbJCgucC" Ids="DwgReORsFJbQcTMRoZ3OmF,VzhI3p9euY9PbXUTAXOnuF" IsHidden="true" />
+                      <Link Id="PvXNVCEG0DpNEELoJSbGjX" Ids="IhF918mQxzIPIybzAeMxi7,TVCivMU0NJDMfqrXEywr7u" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ ScaleFactor ************************
+
+-->
+                  <Node Name="ScaleFactor" Bounds="1005,927,112,80" Id="NneGAiOkFf1PF7u7wJH7k0">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="PPgtIagZKwEMfEQ5FzX9sG">
+                      <Node Bounds="1017,956,86,26" AutoConnect="true" Id="VOU8nmn6kZKPGBBvXIxt76">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="ScaleFactor" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="Q6jjom6GtJ0LYvZ1eLg5a6" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="UrfZGwHAnZsNlV5ELHi7Jf" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="NzrZemj6gE1Oj17d3PxDUl" Name="Scale Factor" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="OUjR2BLLOovPyzfKV7ZjeP" Name="Input" Kind="InputPin" />
+                      <Pin Id="AGoV5NzbKbkPTprgyEd1os" Name="Output" Kind="OutputPin" />
+                      <Pin Id="L5GGeY3MCPINj0DHeojB3e" Name="Scale Factor" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ ScaleFactorOffset ************************
+
+-->
+                  <Node Name="ScaleFactorOffset" Bounds="1375,927,119,80" Id="OV9fCcuYOrIPnKZcPmST9m">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="CvJKgjFLiyFLF1WfybGlwj">
+                      <Node Bounds="1387,956,95,26" AutoConnect="true" Id="I0yPTZFedBTLlyM1c8BkMt">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="ScaleFactorOffset" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="I228R5fWvJDMcumjkj7Hhh" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="VN3QAzbtiLxOrJHyeFy5Q7" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="HCYxRxqoPAFOMY9XvZG7VE" Name="Scale Factor Offset" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="VkpxufDlf8aOf4rrOrbTxN" Name="Input" Kind="InputPin" />
+                      <Pin Id="LVNTVeJ4ORkNBWqR9am5gZ" Name="Output" Kind="OutputPin" />
+                      <Pin Id="CjyR1mEdeOYMQHA8d1KP38" Name="Scale Factor Offset" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ ScanCounter ************************
+
+-->
+                  <Node Name="ScanCounter" Bounds="1730,933,227,118" Id="BuBdr6mvjwuMibx5wweztK">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="DQENuT5NTA5OtAyGjn4D83">
+                      <Node Bounds="1742,956,86,26" AutoConnect="true" Id="Eb7ITU9YaCUL4BpBtHjP2Y">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="ScanCounter" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="FifCvz0qRHFOlM6NK7qsa4" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="EWkVwJV4W5uPVJArfcDHwT" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="KzC2pS78nw0MGELLba99ms" Name="Scan Counter" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="VvOQN4BwxTcNP09js3eelN" Name="Input" Kind="InputPin" />
+                      <Pin Id="QmGG3vpwKE9LlOqmQIoOpZ" Name="Output" Kind="OutputPin" />
+                      <Pin Id="MIfUdwfEEEwNZdCczE8IrT" Name="Encoder Speed" Kind="OutputPin" />
+                      <Node Bounds="1824,990,46,26" Id="Ac5BM02bP71LrmwqpSRBmm">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="BRF7anesPepNl0oLNyo34h" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="CrtjcTKvhaoNbX5Qz0pGsO" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="E1EiUr36O5EQCnx4qhEIWh" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="RPnmzh2miMNM7G6EXcCaKF" Bounds="1867,1034" />
+                      <Link Id="RIGvGR9fXqKLpx9hsg3c1k" Ids="E1EiUr36O5EQCnx4qhEIWh,RPnmzh2miMNM7G6EXcCaKF" />
+                      <Link Id="URsR9kE0d1ZOYfWVQykpHH" Ids="RPnmzh2miMNM7G6EXcCaKF,MIfUdwfEEEwNZdCczE8IrT" IsHidden="true" />
+                      <Link Id="N6y6vGCwf2aL0kOytm89NC" Ids="KzC2pS78nw0MGELLba99ms,BRF7anesPepNl0oLNyo34h" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ ScanFrequency ************************
+
+-->
+                  <Node Name="ScanFrequency" Bounds="198,1129,230,119" Id="H3XbUbDIWP8OpQPe7yk4SY">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="KUV0uSvFw77LcNvBU5iztG">
+                      <Node Bounds="210,1152,86,26" AutoConnect="true" Id="DyvNKzuw3izNbdbvGfYVyB">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="ScanFrequency" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="E0jZb0HAaPMQE8Ko63GxfJ" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="Fb33LXL1SjXOVD7sigBCpo" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="JRMAgMKH8BxMIfjTniKGWS" Name="Scan Frequency" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="Veh4IPsm0XuOLjYsMypS3o" Name="Input" Kind="InputPin" />
+                      <Pin Id="OL0ySOD6ozqNMURgfQLbUY" Name="Output" Kind="OutputPin" />
+                      <Pin Id="N9jWKD3rxqePZdenIY6Tis" Name="Scan Frequency" Kind="OutputPin" />
+                      <Node Bounds="291,1187,46,26" Id="JZ8Sg98oYxqN5X2Y8AgH6O">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="HJRhASHHq6iP6xOqrcCvpq" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="UNmtvBM7uCMQIspavsnFho" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="SWFAWw3OLK2NhB96tKFfSN" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="KhlZ9txlyB7POiItHYLY8l" Bounds="334,1231" />
+                      <Link Id="VGKwct9oPIkMbnqobRcrxL" Ids="SWFAWw3OLK2NhB96tKFfSN,KhlZ9txlyB7POiItHYLY8l" />
+                      <Link Id="SCNk9c4Zi22M8RuweozAsK" Ids="KhlZ9txlyB7POiItHYLY8l,N9jWKD3rxqePZdenIY6Tis" IsHidden="true" />
+                      <Link Id="LDQNwSLn38lOcnSuKNCXNj" Ids="JRMAgMKH8BxMIfjTniKGWS,HJRhASHHq6iP6xOqrcCvpq" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ SerialNumber ************************
+
+-->
+                  <Node Name="SerialNumber" Bounds="628,1129,223,118" Id="RT4UNgPqfDzMB8tyowUXg7">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="RZMAZpyg1ZiPfZpKgCwfMz">
+                      <Node Bounds="640,1152,86,26" AutoConnect="true" Id="KkonvV17MIPPhwxYuVqSeh">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="SerialNumber" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="Cz4KgRaBDDEOSSUnVVg3eV" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="SHRa276zXgEOV77Su5pmUZ" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="TkdIQVIW7yTMoDmx7WyvBW" Name="Serial Number" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="MdgfXnyEVCYPhQqaj3dNq2" Name="Input" Kind="InputPin" />
+                      <Pin Id="Od1I4uS1CzvOSdZnLMsbJ1" Name="Output" Kind="OutputPin" />
+                      <Pin Id="OBkuVgXQKk9Lt1HNxtLQ5L" Name="Serial Number" Kind="OutputPin" />
+                      <Node Bounds="721,1186,46,26" Id="Q51aeDfawyvNgBZfCFY28B">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="GiPU91HgWP5N0QseUh2YCu" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="EPQsTra6zZ2PlhY7HYw2cA" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="Ivm46MzKTAgLT7Qi5JdxXO" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="BbeVoQnc7RnQSR9feSVn1i" Bounds="764,1230" />
+                      <Link Id="EYs5qXNh6WrOxPKGslI8SL" Ids="Ivm46MzKTAgLT7Qi5JdxXO,BbeVoQnc7RnQSR9feSVn1i" />
+                      <Link Id="RU1lcbHGZ70Ljme1ZC4uOv" Ids="BbeVoQnc7RnQSR9feSVn1i,OBkuVgXQKk9Lt1HNxtLQ5L" IsHidden="true" />
+                      <Link Id="RHf1S58BhE5MloeNRtdjiy" Ids="TkdIQVIW7yTMoDmx7WyvBW,GiPU91HgWP5N0QseUh2YCu" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ SizeOfSingleAngularStep ************************
+
+-->
+                  <Node Name="SizeOfSingleAngularStep" Bounds="1005,1129,325,121" Id="MKckSRYQQbYLHQymnJdnJp">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="F9nwKdvr1ISLloulQ0B9Hi">
+                      <Node Bounds="1017,1152,128,26" AutoConnect="true" Id="B7xGcdJxXvfOas1PDbWJyV">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="SizeOfSingleAngularStep" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="OiLn6XCrCqnOqWaMxIkQLE" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="SZSrB4dkLn4QWtH7VLsDwP" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="TN0HFPp0yK9LJql2y80BFe" Name="Size Of Single Angular Step" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="B2McaATYjYCMonG0Yma4W3" Name="Input" Kind="InputPin" />
+                      <Pin Id="KbHl6WdHTNEP1LNqevSoX0" Name="Output" Kind="OutputPin" />
+                      <Pin Id="PmL5oFzKhg8NWGdDNJqFDA" Name="Size Of Single Angular Step" Kind="OutputPin" />
+                      <Node Bounds="1140,1189,46,26" Id="PNQh975DAJ9MwHFYr0jogO">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="SqHfUwN0dAqMx67JOqKVGq" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="GvDfOgkVO7xOSVJSmXwqT7" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="KsBbxi5yIXWMV1oeLz9E7V" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="JLcu9WmTZ0KL6Dz8r55XTL" Bounds="1183,1233" />
+                      <Link Id="LyirICZHTJ1Ou0R4R8lmLZ" Ids="KsBbxi5yIXWMV1oeLz9E7V,JLcu9WmTZ0KL6Dz8r55XTL" />
+                      <Link Id="AYY4QJkLcxtN0MbtLIvbqw" Ids="JLcu9WmTZ0KL6Dz8r55XTL,PmL5oFzKhg8NWGdDNJqFDA" IsHidden="true" />
+                      <Link Id="QaVrvz6RYctNpkeyZyykWC" Ids="TN0HFPp0yK9LJql2y80BFe,SqHfUwN0dAqMx67JOqKVGq" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ StartAngle ************************
+
+-->
+                  <Node Name="StartAngle" Bounds="1375,1129,209,125" Id="CdoZ9zLg3FjNB1I4qknFiW">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="MtW5lF2gHPDP9HXvzZrN7v">
+                      <Node Bounds="1387,1152,86,26" AutoConnect="true" Id="UEwpDEN9fErMUGCPRIT1h8">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="StartAngle" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="QngC1CZVgDlPToMcswvrth" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="C45dyZyToNdQan4xl7Er0C" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="RoYsAxI0KSBQOSRbgHpNOf" Name="Start Angle" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="VKX5WuM1MXnNIDvnOkHf1z" Name="Input" Kind="InputPin" />
+                      <Pin Id="HwfKKfC9hYYMPtRX2cTGu9" Name="Output" Kind="OutputPin" />
+                      <Pin Id="UbGLtbVy8ZtOLMCrf7dVkB" Name="Start Angle" Kind="OutputPin" />
+                      <Node Bounds="1468,1193,46,26" Id="F3iC74YVklsMNISmLID0GS">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="BPyvStERzzGLo7wTiSctdG" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="HXC6O3r24DIN6paXZjk2p6" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="EwY9uboRjt2P6desSWHiwW" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="TMbLYiDRaMVK9Y72k69ikJ" Bounds="1511,1237" />
+                      <Link Id="Ttc2wJtUgbpPF349FzQRn5" Ids="EwY9uboRjt2P6desSWHiwW,TMbLYiDRaMVK9Y72k69ikJ" />
+                      <Link Id="BI9S9I592KdOHW3BSE8GUT" Ids="TMbLYiDRaMVK9Y72k69ikJ,UbGLtbVy8ZtOLMCrf7dVkB" IsHidden="true" />
+                      <Link Id="B1bK1XGCX2uMDiEtqWwMDB" Ids="RoYsAxI0KSBQOSRbgHpNOf,BPyvStERzzGLo7wTiSctdG" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ StatusOfDigitalInputs ************************
+
+-->
+                  <Node Name="StatusOfDigitalInputs" Bounds="1730,1123,137,80" Id="GbONUbdN0DuPIKhb3FkCgb">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="VCLdkGctGIvP0bJHVYsEf6">
+                      <Node Bounds="1742,1152,113,26" AutoConnect="true" Id="LXdBEMrNIUCN01GLL4jLpL">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="StatusOfDigitalInputs" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="BmY5HpR1CXnMO3aprGkE3s" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="A4J0O2ZSjg6NK9NE4I3fFH" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="KS0UEygdqTrQEodnpC7CG0" Name="Status Of Digital Inputs" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="Ru9kZqKPCQ6ODnIWZc7h1q" Name="Input" Kind="InputPin" />
+                      <Pin Id="Qll8LYeQrvTNJpOshxS11F" Name="Output" Kind="OutputPin" />
+                      <Pin Id="AYPCfSkXA6wLTmW9HuIpYh" Name="Status Of Digital Inputs" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ StatusOfDigitalOutputs ************************
+
+-->
+                  <Node Name="StatusOfDigitalOutputs" Bounds="198,1363,145,80" Id="FWc6e1A75mmOVrQDxFWRv0">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="RVYrl9arXzrLpwcWLIul0s">
+                      <Node Bounds="210,1392,121,26" AutoConnect="true" Id="CpOxJdf3d72NeladiVaGqU">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="StatusOfDigitalOutputs" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="MC5waEXk6IkQGfX9hqM547" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="RTOGUVhoiriMzGlLZuuBsx" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="KpgxExgsrjiMvptdj6IBUo" Name="Status Of Digital Outputs" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="VSrHrmnMYmjODnD2woSnbN" Name="Input" Kind="InputPin" />
+                      <Pin Id="RzYEYzTS26iLRtcpBhBH0u" Name="Output" Kind="OutputPin" />
+                      <Pin Id="EiYOS4Q5ayJNSc4HQgrz9m" Name="Status Of Digital Outputs" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ TelegramCounter ************************
+
+-->
+                  <Node Name="TelegramCounter" Bounds="628,1369,250,121" Id="EwqiLGebXUPPc8YNfPzOmi">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="KTAtFjGgPFWOJQhWB3iGTz">
+                      <Node Bounds="640,1392,95,26" AutoConnect="true" Id="JpfL3JzATn2QGSNxBcB0Vo">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="TelegramCounter" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="OGAAfIqNDiGMh3BPS0FQWc" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="KghMPRTCkEDLvukeNeAfRY" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="PlFZI0UiDQwPcVZa7lAYH5" Name="Telegram Counter" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="ETT9MBl2SlMNQNXpc9bWuw" Name="Input" Kind="InputPin" />
+                      <Pin Id="IozSlH16rgAMC83HRUWDub" Name="Output" Kind="OutputPin" />
+                      <Pin Id="TGtwZcORqOkLUj6USNvQAm" Name="Telegram Counter" Kind="OutputPin" />
+                      <Node Bounds="730,1429,46,26" Id="GrunuNPJij6MVzMH4NLg5q">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="FPznIwAZ9KrMMwCK8aOMg1" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="QhbqdPSvJlfQIa6qwXVFYN" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="Le9ZOuhC0qNL1kE59IwMxM" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="VkKBXP3BYyIONekSwZKhWP" Bounds="773,1473" />
+                      <Link Id="IX7leQbSsrILgJJCSf1vJQ" Ids="Le9ZOuhC0qNL1kE59IwMxM,VkKBXP3BYyIONekSwZKhWP" />
+                      <Link Id="OB1fERGhCe8PcHTWgLxVYO" Ids="VkKBXP3BYyIONekSwZKhWP,TGtwZcORqOkLUj6USNvQAm" IsHidden="true" />
+                      <Link Id="PRKdQ1qJke3L6x06qpTbcv" Ids="PlFZI0UiDQwPcVZa7lAYH5,FPznIwAZ9KrMMwCK8aOMg1" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ TimeOfTransmission ************************
+
+-->
+                  <Node Name="TimeOfTransmission" Bounds="1005,1369,283,124" Id="TinerK5IuoUMdrNjHuGLuP">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="UNR2EEgRSMeLvyotgnAFEy">
+                      <Node Bounds="1017,1392,110,26" AutoConnect="true" Id="DFbd16BdXJQPbTTP1Jhr7b">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="TimeOfTransmission" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="Urhucvbl5LYL7MiaPPZDOc" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="JOaBjUOrRbuN2pNCp0wlgA" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="HyXcYeFhxczOFa3QWWwbtf" Name="Time Of Transmission" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="CAUsrqn8pGlPEY0ElOjbwI" Name="Input" Kind="InputPin" />
+                      <Pin Id="Vwq3RMCP4WqQRjNd6HMf5v" Name="Output" Kind="OutputPin" />
+                      <Pin Id="Tmz4lDz0mRgOORpYLJrcMs" Name="Time Of Transmission" Kind="OutputPin" />
+                      <Node Bounds="1122,1432,46,26" Id="UQU1XcrC0AfMWJvSnFvlEd">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="MlfXufQEMIpOzZY4LdC3ad" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="UEDf3Te9YMgNQPkLbUAGRR" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="OVCAxHEBAn2PQMhm40npDA" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="BMl2MC3XZrJNCUwBpjeYH4" Bounds="1165,1476" />
+                      <Link Id="F5P2ezNCZhEO22pWAAlQ41" Ids="OVCAxHEBAn2PQMhm40npDA,BMl2MC3XZrJNCUwBpjeYH4" />
+                      <Link Id="Kafzt8WgfVON0Hbl08HTlQ" Ids="BMl2MC3XZrJNCUwBpjeYH4,Tmz4lDz0mRgOORpYLJrcMs" IsHidden="true" />
+                      <Link Id="JA27UIQkBs9MWzZILY6gla" Ids="HyXcYeFhxczOFa3QWWwbtf,MlfXufQEMIpOzZY4LdC3ad" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ TimeSinceStartup ************************
+
+-->
+                  <Node Name="TimeSinceStartup" Bounds="1375,1369,253,123" Id="IQ5jQ0curNeOkX9CQ4E7yu">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="NU16SEW2elvOhQAsDVEUXG">
+                      <Node Bounds="1387,1392,95,26" AutoConnect="true" Id="DjVze5lIE67M6EWXBspp4j">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="TimeSinceStartup" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="JiAHdFxijChLPxWvej3sc5" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="JiWoQR9ltMoLBpCLEEDvDr" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="EoI4rVKVF6KQL1vTt5sZJH" Name="Time Since Startup" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="Mfyt3rP6D2gOUWNvJ3jyiG" Name="Input" Kind="InputPin" />
+                      <Pin Id="FFMrgOJNAu8LeJgcZckE4c" Name="Output" Kind="OutputPin" />
+                      <Pin Id="BYaLScSFSviPatXRFVbxtu" Name="Time Since Startup" Kind="OutputPin" />
+                      <Node Bounds="1477,1431,46,26" Id="QYmMryJzfNnP0BF20yDdNe">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="VylFIeYt6a0M1WxCclKMxm" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="NMfg4tkgv1PPOKIdi1haIL" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="Q9wKypyz4OaQDUYnoKjERk" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="Uo6lYBVqCw6L9Zjfo4MLum" Bounds="1520,1475" />
+                      <Link Id="MxPjczHYiD4Ozys2oFvxRv" Ids="Q9wKypyz4OaQDUYnoKjERk,Uo6lYBVqCw6L9Zjfo4MLum" />
+                      <Link Id="Sm8PMNgkUmANP0ehajBycu" Ids="Uo6lYBVqCw6L9Zjfo4MLum,BYaLScSFSviPatXRFVbxtu" IsHidden="true" />
+                      <Link Id="OPZQn0IDQR7MVDb962QJuz" Ids="EoI4rVKVF6KQL1vTt5sZJH,VylFIeYt6a0M1WxCclKMxm" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ VersionNumber ************************
+
+-->
+                  <Node Name="VersionNumber" Bounds="1730,1369,234,120" Id="FFZYJguxqxwQWLvNVUAmdN">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="TGkrSvsKmlrLY7onoWxzi2">
+                      <Node Bounds="1742,1392,87,26" AutoConnect="true" Id="EhOTOIfbQxTNBxc3K0hvmQ">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="VersionNumber" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="AT6UH47Pj81MCoGwcbRwhp" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="Vcij7pw251fMq7eK0CEWyH" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="URBPypJvdgVPZRIfW74m2Y" Name="Version Number" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="UhxAUFVLiWULfAQRQuDvgV" Name="Input" Kind="InputPin" />
+                      <Pin Id="OBfU0Ums1YlNwPDMxgIg6i" Name="Output" Kind="OutputPin" />
+                      <Pin Id="QeqGKJrhYtALZTVbk9jdSf" Name="Version Number" Kind="OutputPin" />
+                      <Node Bounds="1824,1428,46,26" Id="BM6Gfv804irQCnbGzLMa4g">
+                        <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="ClassType" Name="Nullable" />
+                          <Choice Kind="OperationCallFlag" Name="Value" />
+                        </p:NodeReference>
+                        <Pin Id="Vqwy0dICsHbMSEBaYqPjtL" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="VSeyYLlV32QPDA7oo6ek6n" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="BU2JSc8jHtXLUCV80lWahI" Name="Value" Kind="OutputPin" />
+                      </Node>
+                      <ControlPoint Id="CzHwkgGcq6MN5gX77SlPZe" Bounds="1867,1472" />
+                      <Link Id="CCkj8qw8ILjQd5zbDbZEIN" Ids="BU2JSc8jHtXLUCV80lWahI,CzHwkgGcq6MN5gX77SlPZe" />
+                      <Link Id="M6n1kxjIG1DPR5tyyccViU" Ids="CzHwkgGcq6MN5gX77SlPZe,QeqGKJrhYtALZTVbk9jdSf" IsHidden="true" />
+                      <Link Id="RXiLSmeoo4wLHFnSmWitmK" Ids="URBPypJvdgVPZRIfW74m2Y,Vqwy0dICsHbMSEBaYqPjtL" />
+                    </Patch>
+                  </Node>
+                </Canvas>
+                <ProcessDefinition Id="GAZbcnxNzE5PDLlXanuLSE" IsHidden="true">
+                  <Fragment Id="EmB12VqL6b1Pskg2ijwsgo" Patch="N1nRZxSKa3eQF2vKlJTrrs" />
+                  <Fragment Id="BV9CW44PnI4LVCLBqVuzoj" Patch="QaViUROeO6xLfZTul0B9cW" />
+                  <Fragment Id="ONAVBzQOwv8MbuwwRs6Z4D" Patch="JCLTwqAlCdlL34RnXzqoio" />
+                  <Fragment Id="FZaiu6wBAU8LD8rZupOlmT" Patch="KaRrty2LnloLxnPZ0tRJEz" />
+                  <Fragment Id="GU6AfzhbJa9OrLye1k2Bi1" Patch="MhYGpiiAO5gOsBUzC7HK93" />
+                  <Fragment Id="APoAwQeACeUPEQ5M4ODjbU" Patch="EbV9920r7OLO6RV0hh9rgY" />
+                  <Fragment Id="AI3E4Y54nkePB6FZuT0Xfg" Patch="NjCHTHPhI9SMBmuXisOwUr" />
+                  <Fragment Id="CuHKWb4X83WMzq6ieZwBlY" Patch="MWTOi34eNovM8lXmtqHjps" />
+                  <Fragment Id="CwDhTNrMnoTP6K8s8cMzrI" Patch="VFqagYnhPTPMRRJKPhm8sn" />
+                  <Fragment Id="HSE88IxgMY8MsNHllVCqnC" Patch="LmZG0dCaM7XLLGrtAOl5zD" />
+                  <Fragment Id="Ibe3liNueIEPBWUt63QikF" Patch="THjYRKolQCsM5K9LENFPQ1" />
+                  <Fragment Id="AnkDc7fLzX4OLlqU1VVpQC" Patch="KaRjvlvloNYLDvYioRUQDZ" />
+                  <Fragment Id="Qmx2Fd9aa6wNIooMo0bHZ2" Patch="HiSvhi9w64FM6wK2ATkow5" />
+                  <Fragment Id="PgEsJGA8Mi0O85WCMadsED" Patch="G9rjpcBtnwoN0eVusM9srK" />
+                  <Fragment Id="T7Azrsh4bT4Lo51QHJGoo6" Patch="Jl5eioMaZF6QDy5kPXxY0y" />
+                  <Fragment Id="Vzsf9b9xSWDPL64jYOOMhl" Patch="VO4Dcw1PavoONMqnJ7au3X" />
+                  <Fragment Id="DxFYoase51ALQArcaxp9El" Patch="B0DcTvD8lOkPYdqL5IG47K" />
+                  <Fragment Id="CVZRq1dMCWUL3qDHOiMayn" Patch="NneGAiOkFf1PF7u7wJH7k0" />
+                  <Fragment Id="ADSlt2ajJ0KNHPxsaiLA4k" Patch="OV9fCcuYOrIPnKZcPmST9m" />
+                  <Fragment Id="Kkw1Z22hf7lNDXJ0cPGjtI" Patch="BuBdr6mvjwuMibx5wweztK" />
+                  <Fragment Id="GsV8lAbcVcVNDvqNgpBoL4" Patch="H3XbUbDIWP8OpQPe7yk4SY" />
+                  <Fragment Id="NDPEdD9ykrmQNvPAjt5oDC" Patch="RT4UNgPqfDzMB8tyowUXg7" />
+                  <Fragment Id="IF4V8FuxkvkPs1WYwwDy9E" Patch="MKckSRYQQbYLHQymnJdnJp" />
+                  <Fragment Id="LD4mbzVoKTPNW6ho9Jgb7n" Patch="CdoZ9zLg3FjNB1I4qknFiW" />
+                  <Fragment Id="DIXKo6T71imO9s5Sm2Z8BS" Patch="GbONUbdN0DuPIKhb3FkCgb" />
+                  <Fragment Id="SOrlneLvMBjMQ7nTLSRtmC" Patch="FWc6e1A75mmOVrQDxFWRv0" />
+                  <Fragment Id="SSsPPNrqII1NND7yjc5voE" Patch="EwqiLGebXUPPc8YNfPzOmi" />
+                  <Fragment Id="CmGZMeOXREiO88ZUD3mDx2" Patch="TinerK5IuoUMdrNjHuGLuP" />
+                  <Fragment Id="SIcuaCYFAPQOD05qVtJXdJ" Patch="IQ5jQ0curNeOkX9CQ4E7yu" />
+                  <Fragment Id="RZIVWJld6MpLMGojxH6JOj" Patch="FFZYJguxqxwQWLvNVUAmdN" />
+                </ProcessDefinition>
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ SocketConnectionResult ************************
+
+-->
+            <Node Name="SocketConnectionResult" Bounds="268,1375" Id="D2kJ4u0u1DtQattpiALNXi">
+              <p:NodeReference>
+                <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:TypeAnnotation LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                <Choice Kind="TypeFlag" Name="SocketConnectionResult" />
+              </p:TypeAnnotation>
+              <Patch Id="HLOQ7zXefYeOrxz53IK3eu">
+                <Canvas Id="Pv4f8dEoxbgM5c86GA0OhL" CanvasType="Group">
+                  <!--
+
+    ************************ & ************************
+
+-->
+                  <Node Name="&amp;" Bounds="493,398,100,50" Id="PKmEXINIKDVLBf4C9uSkeR">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="AxuQwK8CtVGLGoMjAJZrPl">
+                      <Node Bounds="493,398,10,10" AutoConnect="true" Id="D2ERWLWVmSDM3YCK9HcN60">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.SocketConnectionResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="&amp;" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.SocketConnectionResult" />
+                        </p:NodeReference>
+                        <Pin Id="Ch28M2gHgwePpqoc1bmBlE" Name="Input" Kind="InputPin" />
+                        <Pin Id="Uq4vskzRAO9NQqMAJae9ue" Name="Input 2" Kind="InputPin" />
+                        <Pin Id="CmSoRwwiRwtLSt0prGpb0M" Name="Output" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="AjgUT5RkFfhLeNdp3IxeCI" Name="Input" Kind="InputPin" />
+                      <Pin Id="MGD5pMP7dznLmlGt978MXD" Name="Input 2" Kind="InputPin" />
+                      <Pin Id="RhK0aUki0JSLqQsCvbLNfi" Name="Output" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ | ************************
+
+-->
+                  <Node Name="|" Bounds="773,398,100,50" Id="U5SpIzz31T8Mybo4fjIHRf">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="MrPTTC8CN3MMtYTAsL6dtm">
+                      <Node Bounds="773,398,10,10" AutoConnect="true" Id="RPh4sRQT5liQD1DLuw0mPN">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.SocketConnectionResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="|" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.SocketConnectionResult" />
+                        </p:NodeReference>
+                        <Pin Id="TgcJXC0Zq6ZOKtaNZ4LkUZ" Name="Input" Kind="InputPin" />
+                        <Pin Id="PQes1oML6HALG5T2QJ9HSb" Name="Input 2" Kind="InputPin" />
+                        <Pin Id="KO03V3eqlRpLqfNv2fzdTk" Name="Output" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="OdO02gpktjpMWSdBRvYjGa" Name="Input" Kind="InputPin" />
+                      <Pin Id="Rf8lEVc4UMyLzRjDrRHkDI" Name="Input 2" Kind="InputPin" />
+                      <Pin Id="B2dHX96jBt5Lp60zbnna5o" Name="Output" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ = ************************
+
+-->
+                  <Node Name="=" Bounds="493,548,100,50" Id="VbA9NoJvzPAMeXv8mgTVvt">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="S3HKatnB8tpPwGJKB8tnX7">
+                      <Node Bounds="493,548,10,10" AutoConnect="true" Id="OMgcSAPe49dMwm6w901G5A">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.SocketConnectionResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="=" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.SocketConnectionResult" />
+                        </p:NodeReference>
+                        <Pin Id="KHSbgYk4j85MbIZF2pb4OO" Name="Input" Kind="InputPin" />
+                        <Pin Id="ND7hCIKJoRsOh2aCMvMYBG" Name="Input 2" Kind="InputPin" />
+                        <Pin Id="EijJLMZYOSfPkBhUwoPQVa" Name="Result" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="FUAWAe1iIK9OtyC9tZnhH6" Name="Input" Kind="InputPin" />
+                      <Pin Id="OTSMaWyt8cZQcyXMSrfNF5" Name="Input 2" Kind="InputPin" />
+                      <Pin Id="Fe5px6AryFlQKCOTCLEQAO" Name="Result" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ ^ ************************
+
+-->
+                  <Node Name="^" Bounds="773,548,100,50" Id="NBa4STrnN7wPYFSPy7EK3R">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="Vaqc2yI8H7HQDYW9vdDvgW">
+                      <Node Bounds="773,548,10,10" AutoConnect="true" Id="S8wrUwJAKxrOEMKCx5GJ1N">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.SocketConnectionResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="^" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.SocketConnectionResult" />
+                        </p:NodeReference>
+                        <Pin Id="IiXTIKAeHoyN3nMMXthVKe" Name="Input" Kind="InputPin" />
+                        <Pin Id="IZmWyFA8KEoM5qkJAMXcYR" Name="Input 2" Kind="InputPin" />
+                        <Pin Id="LvvpCZP1AptPV83RfxtGYk" Name="Output" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="SnRJ1SrHgobNxdlImJyZ9e" Name="Input" Kind="InputPin" />
+                      <Pin Id="TyvultrmGZDOmAwyymuJPw" Name="Input 2" Kind="InputPin" />
+                      <Pin Id="GNZD5MpXFEfOuL8QR0ULM5" Name="Output" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ != ************************
+
+-->
+                  <Node Name="!=" Bounds="493,698,100,50" Id="LzyIZi5AEGwPTBbojBWbl0">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="P4PBs6gmN95NGb1x8QxpTF">
+                      <Node Bounds="493,698,10,10" AutoConnect="true" Id="Qv741MVSBwgMA2wKRhUkxr">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.SocketConnectionResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="!=" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.SocketConnectionResult" />
+                        </p:NodeReference>
+                        <Pin Id="L7DmJAvvSBOOlHYmRh87Uz" Name="Input" Kind="InputPin" />
+                        <Pin Id="TvdSNa133skMAJsIL4Q4Iv" Name="Input 2" Kind="InputPin" />
+                        <Pin Id="UdmPZBtvSEWQFfRJQ6Bq0F" Name="Result" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="E1pEZeqD1vPODJTnKexqha" Name="Input" Kind="InputPin" />
+                      <Pin Id="Eu3dwtSvuAGMiY2rRoAbVn" Name="Input 2" Kind="InputPin" />
+                      <Pin Id="ROFphbDbTuYMSQJX8SUten" Name="Result" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                </Canvas>
+                <ProcessDefinition Id="USebslXGmjQOvMz8CEQZch" IsHidden="true">
+                  <Fragment Id="EHaW72MwAtnP65W5RCWm8I" Patch="PKmEXINIKDVLBf4C9uSkeR" />
+                  <Fragment Id="Afmr5UwbLCyQVGSArlbiR0" Patch="U5SpIzz31T8Mybo4fjIHRf" />
+                  <Fragment Id="DpwuTE2wZ85OoEc2mlkRdd" Patch="VbA9NoJvzPAMeXv8mgTVvt" />
+                  <Fragment Id="OKr75OSv4LRNYEnw0qdeuY" Patch="NBa4STrnN7wPYFSPy7EK3R" />
+                  <Fragment Id="AqtpPKKJUnsPNjcst7U6P0" Patch="LzyIZi5AEGwPTBbojBWbl0" />
+                </ProcessDefinition>
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ SetAccessModeResult ************************
+
+-->
+            <Node Name="SetAccessModeResult" Bounds="268,1443" Id="O0h03qvZkttN9vPFP98fVi">
+              <p:NodeReference>
+                <Choice Kind="ForwardDefinition" Name="Forward" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:TypeAnnotation LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+                <Choice Kind="TypeFlag" Name="SetAccessModeResult" />
+              </p:TypeAnnotation>
+              <Patch Id="EBBlMM6OwijQFv3BJAuix2">
+                <Canvas Id="D1OVC5DeVw7OSLNrIpL6ZZ" CanvasType="Group">
+                  <!--
+
+    ************************ RawData ************************
+
+-->
+                  <Node Name="RawData" Bounds="520,423,100,50" Id="Mhp28MTPBIWOFEIbFS3nBZ">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="MJSsr0r6h0KLgzOQMRR5vJ">
+                      <Node Bounds="520,423,10,10" AutoConnect="true" Id="T4exKi7B019LY8uzu7NnPF">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.SetAccessModeResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="RawData" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.SetAccessModeResult" />
+                        </p:NodeReference>
+                        <Pin Id="P6Yu60nhjFYMW61N9uvJgx" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="VVxqtIn0a00OEz8iMFjf96" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="GxT3tFRvPBSOy8QHcROR8L" Name="Raw Data" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="HvBiQEdSadZMRIWQE7Y6ew" Name="Input" Kind="InputPin" />
+                      <Pin Id="UreSYfbAcxiLSKuuwPaIvP" Name="Output" Kind="OutputPin" />
+                      <Pin Id="L5Qb3cBaT5rPqx3i7f4uEP" Name="Raw Data" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                </Canvas>
+                <ProcessDefinition Id="RC4AvqgFEkjPvvNwHl8bso" IsHidden="true">
+                  <Fragment Id="D0fQAMLibLOQHdj40IU3Ne" Patch="Mhp28MTPBIWOFEIbFS3nBZ" />
+                </ProcessDefinition>
+              </Patch>
+            </Node>
+          </Canvas>
+          <ProcessDefinition Id="EsXgtyIb7TTNhoILpJKqK4" IsHidden="true">
+            <Fragment Id="PQI5pCiMtyxNIUR0CdCvEo" Patch="URQm3WjbpRwQTz6CdQcbJ9" Enabled="true" />
+            <Fragment Id="MapJsQm1CxlPhsbuRR6eUO" Patch="G8mCUvfWbKJNkHCC1ZUL6y" />
+            <Fragment Id="ICq73z79RJmL4i7Eqv9Fjy" Patch="Mi4Sc3h1utkPVTv2JyVAG9" />
+            <Fragment Id="M7v4cfmS2rdLGmDi9hOjUz" Patch="S2lCaDbCtcEMm3kno2W9s8" />
+            <Fragment Id="GSdzAqc4fbEPmL5FUoEMHd" Patch="V4BRelIcT96PsEBTlu4HKf" />
+            <Fragment Id="KbmOWIbonwfMfqz9WU8btb" Patch="KPLIJG1izsZQFfqplL3hv2" />
+            <Fragment Id="I27R0HFiBzHPwCZIP7gxTj" Patch="UGnncGaUjD7NOMHav6c0cb" />
+            <Fragment Id="NYtiJj6REFGOz4KcEqDJyI" Patch="D19rOrnkt4NOid0AjG8XfL" />
+            <Fragment Id="ER8tsrGqDxoNLYuO7LcJOk" Patch="JU7ZiW5CxwlPCN8cuEEpLh" />
+            <Fragment Id="EnackUJ9hTCO2MW1pRZBZK" Patch="OUkbfvCbgpzMlZgmvy4uZ8" />
+            <Fragment Id="Uepf5cGGZBvQaVKlLkujd6" Patch="JnQtFZysOPULYWIr17ffgY" />
+            <Fragment Id="DGK6wrbnoXBL6tDkNxg79Y" Patch="Filk411FdRtPoeliyDzQ53" />
+            <Fragment Id="GR0nJE4sSKyO4GOMbXQApq" Patch="Vwt6CQeZNawOBkYi8YSB9m" />
+            <Fragment Id="EcNXMmbMcHbOW3dOJsrN29" Patch="E884HbglVsMLh8VUVuzsjG" />
+            <Fragment Id="Bk8KD4uQhO9LNykaj0K6T0" Patch="GchzyIanaGJO3NJ27fwvcn" />
+            <Fragment Id="C2GPHzlkgoPNsEPcQ0XmPt" Patch="Rvr24uOKPVrNhm888O7N00" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ LIDAR (LMS) ************************
+
+-->
+      <Node Name="LIDAR (LMS)" Bounds="376,305" Id="QRdKbW0F1aTMNXkeqVHMFv" Summary="Retrieves data from a SICK LMS1XX LIDAR">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="AiC97gPoYMTMnFWH3C2Grw">
+          <Canvas Id="EsThPMXN3PHLs3vSfmPNn8" CanvasType="Group">
+            <Node Bounds="341,245,155,132" Id="TyqisRLYWuAM99vB1aPtnt">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="OtkDxCfj4APLezlkbS1FkU" Name="Force" Kind="InputPin" />
+              <Pin Id="Am5Pu1IZWw1OJFmMSxTVJf" Name="Dispose Cached Outputs" Kind="InputPin" />
+              <Pin Id="Fq6kS1HCcXANpWT7XdVYZR" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="VQwHcrLlW7COLEDJez6gN8" ManuallySortedPins="true">
+                <Patch Id="KrMdnIWx5NkNb8tMXNgQbz" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="BhkVSkP78bwMHtE2303170" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="353,277,131,26" Id="DNqKCCpaRpQQQd1aXVjklp">
+                  <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX" LastSymbolSource="VL.Devices.SICK.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="Category" Name="Devices" />
+                    <CategoryReference Kind="Category" Name="SICK" />
+                    <CategoryReference Kind="ClassType" Name="LMS1XX" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                    <CategoryReference Kind="ClassType" Name="LMS1XX" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="EtIKj8gbWGRNlpFauLXjuK" Name="Ip Adress" Kind="InputPin" />
+                  <Pin Id="GnobHeDdAWvP195fU4p9W2" Name="Port" Kind="InputPin" />
+                  <Pin Id="VpYCEvkZOWjNnVRi1JTVxT" Name="Receive Timeout" Kind="InputPin" />
+                  <Pin Id="FoSqAX1dil6OotaQR1gSLe" Name="Send Timeout" Kind="InputPin" />
+                  <Pin Id="IBnGVNvqZbfPAtbdAwAp2p" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="353,323,54,26" Id="GMZobXwqCLHLaOOD4lGxDb">
+                  <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX" LastSymbolSource="VL.Devices.SICK.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="Category" Name="Devices" />
+                    <CategoryReference Kind="Category" Name="SICK" />
+                    <CategoryReference Kind="ClassType" Name="LMS1XX" />
+                    <Choice Kind="OperationCallFlag" Name="Connect" />
+                  </p:NodeReference>
+                  <Pin Id="V45SkuO1KjrPDzNVcUBH4s" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="AbvpkKbnGaxN7BNIZ6VgKE" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="UzI3FBsK4y3PoAANvxfmAS" Name="Result" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="Vb9fTa6lxY0MxGu8uWppIw" Bounds="355,252" Name="IP" Alignment="Top" />
+              <ControlPoint Id="ToKMJOIdJY8NyWcDNzm9lV" Bounds="397,252" Name="Port" Alignment="Top" />
+              <ControlPoint Id="KM7FGwHq8h9PP6wxPTNKqm" Bounds="439,252" Alignment="Top" />
+              <ControlPoint Id="C4UTNn87u9ANWaliebKEFd" Bounds="481,252" Alignment="Top" />
+              <ControlPoint Id="VqfJRkS5bZ4O5uedkkqODm" Bounds="355,373" Alignment="Bottom" />
+            </Node>
+            <ControlPoint Id="RyCAUYPBrC1NU4I4sKLsWI" Bounds="355,168" />
+            <ControlPoint Id="Po24MTrZRrWMPWYIv6YeKz" Bounds="397,185" />
+            <ControlPoint Id="J2PfrT7frENLEOyLA673dd" Bounds="439,199" />
+            <ControlPoint Id="OKOLUbEAfmwO3y6IMnh8J3" Bounds="481,219" />
+            <ControlPoint Id="EUWkEcqh2idM72birGEbXX" Bounds="295,204" />
+            <Node Bounds="341,477,1405,294" Id="CO2KUkmDFWfNaRRXjXpyAY">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:NodeReference>
+              <Pin Id="IibG7BGukZXOtRNesM5FaH" Name="Condition" Kind="InputPin" />
+              <Patch Id="PHC88X8rztSMt05kHZWUIi" ManuallySortedPins="true">
+                <Node Bounds="353,500,104,26" Id="UnKCN2FepDPLTcykOBRbqG">
+                  <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX" LastSymbolSource="VL.Devices.SICK.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="LMDScandataAsync" />
+                    <CategoryReference Kind="ClassType" Name="LMS1XX" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="RHuEdUu9IzRLdQqLwIim7S" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="UZvOTA8GhrINCKb0Kek61Q" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="S38O8DKcLwZLf8SQ3gkRau" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="452,592,79,26" Id="QMVgsMVuoZ6LFBkgMvcqpA">
+                  <p:NodeReference LastCategoryFullName="Reactive.Task" LastSymbolSource="VL.Reactive.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="ToObservable" />
+                    <CategoryReference Kind="ClassType" Name="Task" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="I60thVwXCgWOxZc2tPzwRE" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="HuoWy2NMNDiQLAqfwxT4QM" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="1584,643,150,82" Id="Aod8O1lSqIUNZs14ESxqYb">
+                  <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                    <Choice Kind="ProcessAppFlag" Name="ForEach" />
+                    <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  </p:NodeReference>
+                  <Pin Id="UrV9ajLm6eBNacMEizhfsL" Name="Messages" Kind="InputPin" />
+                  <Pin Id="TAKcy9Fo93MOwIQ1Q2L2GJ" Name="Reset" Kind="InputPin" />
+                  <Pin Id="Bgf4Cq3sC5dM7P6fwBuvaN" Name="Result" Kind="OutputPin" />
+                  <Patch Id="J7dSRWg7KnGQZ5E9OnLMVc" ManuallySortedPins="true">
+                    <Patch Id="VmGHDV91g9yLz1kdrhsKn8" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="KJSMuJ1sRTeOmicXOirYDl" Name="Update" ManuallySortedPins="true">
+                      <Pin Id="AUD5H2SkvhPNKk6xf1gatE" Name="Input 1" Kind="InputPin" />
+                      <Pin Id="L7hCNrKBQ35MtCFYQeLb0b" Name="Output" Kind="OutputPin" />
+                    </Patch>
+                    <ControlPoint Id="CyVsMjQjLjePJd5hCwLV8r" Bounds="1598,651" />
+                    <ControlPoint Id="COjF6SrUzj5NEjmiMejmaw" Bounds="1679,718" />
+                    <Node Bounds="1596,674,86,26" Id="Fkuat6w6fjdO9fAxaghUYj">
+                      <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX.LMDScandataResult" LastSymbolSource="VL.Devices.SICK.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="RawDataString" />
+                        <CategoryReference Kind="ClassType" Name="LMDScandataResult" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="O0uSikHKV48PwTBMu9JQyO" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="Dc9Hic94IXIMpc304lhDZ5" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="DLOH6UKMXyPMGd3oaMi6RN" Name="Raw Data String" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                </Node>
+                <Patch Id="I03KGmxLbiqLC4jOLVTACE" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="MJuWbYC8lfvLgpxqLCaML8" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="775,643,150,82" Id="ObJL1IikHBoPAnjQpOPx12">
+                  <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                    <Choice Kind="ProcessAppFlag" Name="ForEach" />
+                    <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  </p:NodeReference>
+                  <Pin Id="Dyno9M9wVYPN1e3xOJNEgk" Name="Messages" Kind="InputPin" />
+                  <Pin Id="Ow5CY4kTT3FQRpxsFOiEQp" Name="Reset" Kind="InputPin" />
+                  <Pin Id="NkKNCdkCIGcMJrFfDDJymW" Name="Result" Kind="OutputPin" />
+                  <Patch Id="FFnsyGv3xS0NcJtpEvZJW7" ManuallySortedPins="true">
+                    <Patch Id="HOwAem99LKEPrtKMtvQTIb" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="GoRoLXKyDePNMcU0GG5wlA" Name="Update" ManuallySortedPins="true">
+                      <Pin Id="Iglk4zUSaOmPvxUUV3vahj" Name="Input 1" Kind="InputPin" />
+                      <Pin Id="VHPDCfo2nwXOWjgFhQU5O6" Name="Output" Kind="OutputPin" />
+                    </Patch>
+                    <ControlPoint Id="UI8DI3s0bM4M9ollh6eSPC" Bounds="789,651,-8,0" />
+                    <ControlPoint Id="I24hcfHeC2SPkBQuR0aUis" Bounds="870,718,-8,0" />
+                    <Node Bounds="787,674,86,26" Id="E6zP4LCfRf2QC8CXRKuOtm">
+                      <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX.LMDScandataResult" LastSymbolSource="VL.Devices.SICK.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="ClassType" Name="LMDScandataResult" />
+                        <Choice Kind="OperationCallFlag" Name="StartAngle" />
+                      </p:NodeReference>
+                      <Pin Id="OIYf67gbwoNQQ0cGbfsOhx" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="PWzlvlawIBxMuu6P6faA0y" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="VdA5DSOVQomPnm4oNbI7za" Name="Start Angle" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                </Node>
+                <Node Bounds="980,640,150,85" Id="UNWAkHPvRzXLAr3HsPqkDc">
+                  <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                    <Choice Kind="ProcessAppFlag" Name="ForEach" />
+                    <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  </p:NodeReference>
+                  <Pin Id="TIt56YXnhSpNgs0yihsB0H" Name="Messages" Kind="InputPin" />
+                  <Pin Id="S6LJeRIj8U1O40yn6CYY7q" Name="Reset" Kind="InputPin" />
+                  <Pin Id="BjKFkpEan5OPis4voWoyVW" Name="Result" Kind="OutputPin" />
+                  <Patch Id="LGffYe1GhtAPExoNyqEf3Y" ManuallySortedPins="true">
+                    <Patch Id="Nli7hrA278cO9kZD22DgEu" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="QPHhjwFDlNaOt3WHvAMaAB" Name="Update" ManuallySortedPins="true">
+                      <Pin Id="Tqdsxae9yKcLGhZU70xle3" Name="Input 1" Kind="InputPin" />
+                      <Pin Id="Si3N1U49KNcOF0PXBzb2s3" Name="Output" Kind="OutputPin" />
+                    </Patch>
+                    <ControlPoint Id="CUPVl3o4u1eOUbfly1rkUD" Bounds="994,648,-8,0" />
+                    <ControlPoint Id="NOpzOeiaInmP0e5Md8MYl0" Bounds="1075,718,-8,0" />
+                    <Node Bounds="992,674,86,26" Id="CiKYPp60WR0O0gQqYV1RUn">
+                      <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX.LMDScandataResult" LastSymbolSource="VL.Devices.SICK.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="ClassType" Name="LMDScandataResult" />
+                        <Choice Kind="OperationCallFlag" Name="ScanFrequency" />
+                      </p:NodeReference>
+                      <Pin Id="B5iJQH2AJIvPh1wHCanq8W" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="GcOODOmGNQAMwGYOFRHKVT" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="R1uT55yPoFoLYGVfs6aq0Z" Name="Scan Frequency" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                </Node>
+                <Node Bounds="1179,639,150,85" Id="SHdEJpOEh5cNF1d0D5qfqI">
+                  <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                    <Choice Kind="ProcessAppFlag" Name="ForEach" />
+                    <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  </p:NodeReference>
+                  <Pin Id="HOiyCx4z6EgQD6TWDUjutS" Name="Messages" Kind="InputPin" />
+                  <Pin Id="FPOiKpYbwKXMr7aqqfwGa9" Name="Reset" Kind="InputPin" />
+                  <Pin Id="M4FlkK0rHtYN4AYQWSLCOV" Name="Result" Kind="OutputPin" />
+                  <Patch Id="KcpfCGQ7mqYNZ4TziBe0yY" ManuallySortedPins="true">
+                    <Patch Id="SSsImGrPJE3Px7Zrjm0g1I" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="ILU5jbfCFORLWTtu2170ec" Name="Update" ManuallySortedPins="true">
+                      <Pin Id="RJZe7VVMhwROnHYjINxDir" Name="Input 1" Kind="InputPin" />
+                      <Pin Id="Se1UfUy7YeUMv6lKdRbnqV" Name="Output" Kind="OutputPin" />
+                    </Patch>
+                    <ControlPoint Id="S76w1w7fe9KPzu4wipMm8i" Bounds="1193,647,-8,0" />
+                    <ControlPoint Id="KoEzXB7dVY8PQd2qFXQiy7" Bounds="1274,717,-8,0" />
+                    <Node Bounds="1191,673,86,26" Id="OJinQ23iV00Nai7yvJD0tF">
+                      <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX.LMDScandataResult" LastSymbolSource="VL.Devices.SICK.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="ClassType" Name="LMDScandataResult" />
+                        <Choice Kind="OperationCallFlag" Name="SerialNumber" />
+                      </p:NodeReference>
+                      <Pin Id="JZSUwAXcTKEMHZhZqwALEt" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="P2cCEu5PObqPizdm1ETPFi" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="A8eRujPc40aNZnbyXoDt4x" Name="Serial Number" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                </Node>
+                <Node Bounds="1381,633,150,91" Id="AUVbUeu60XZPbJMU7eRSxy">
+                  <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                    <Choice Kind="ProcessAppFlag" Name="ForEach" />
+                    <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  </p:NodeReference>
+                  <Pin Id="Mgtd60ttOEoOmrlSY3aVcL" Name="Messages" Kind="InputPin" />
+                  <Pin Id="JlREOA41q2yLGE4xt00S6f" Name="Reset" Kind="InputPin" />
+                  <Pin Id="Vi4T8OCgMyYL7DgGxfTf9R" Name="Result" Kind="OutputPin" />
+                  <Patch Id="QsnGtdE7NAHNTT233gG9Cv" ManuallySortedPins="true">
+                    <Patch Id="IzEyYCMTQuBM2bvLJab6OI" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="VaZ5ha9izE9MZZhQFgUfBl" Name="Update" ManuallySortedPins="true">
+                      <Pin Id="KOMNNh3GclCLto88N5iIrq" Name="Input 1" Kind="InputPin" />
+                      <Pin Id="CfTItcJyflaLuSChTK4arD" Name="Output" Kind="OutputPin" />
+                    </Patch>
+                    <ControlPoint Id="Kd3N2rBWh4wOmY9u8Zxbqz" Bounds="1395,641" />
+                    <ControlPoint Id="V7Rf4M93NQjMxnjtyszLLa" Bounds="1476,717" />
+                    <Node Bounds="1393,664,86,26" Id="DMeOlJFa88sLgO14pGl7xL">
+                      <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX.LMDScandataResult" LastSymbolSource="VL.Devices.SICK.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="OperationCallFlag" Name="DeviceStatus" />
+                        <CategoryReference Kind="ClassType" Name="LMDScandataResult" NeedsToBeDirectParent="true" />
+                      </p:NodeReference>
+                      <Pin Id="GXseuGawWImMZ6OaStISCm" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="JX0Ek2OUqREOsY4X0Gz3im" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="QWGjMAevyfSOVgnIsJBJrr" Name="Device Status" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                </Node>
+                <Node Bounds="591,650,98,80" Id="RDOnVSXkKFeMGeL0ALwlDp">
+                  <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                    <Choice Kind="ProcessAppFlag" Name="ForEach" />
+                    <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  </p:NodeReference>
+                  <Pin Id="H4oTZBVGw0yLGBrOVwbsNu" Name="Messages" Kind="InputPin" />
+                  <Pin Id="HhV3AzFBHHWPqn7fdfaych" Name="Reset" Kind="InputPin" />
+                  <Pin Id="J8Src3LNXlSLFuxEOsnY5S" Name="Result" Kind="OutputPin" />
+                  <Patch Id="IHHRIPtJ6E5LXPGdFvwtKp" ManuallySortedPins="true">
+                    <Patch Id="MfowYTHUz58MDvIzkFDcaN" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="JWbMb9WxhDOLjXAVA88d48" Name="Update" ManuallySortedPins="true">
+                      <Pin Id="QCqeNqVW9j9MZB2BXtuvhP" Name="Input 1" Kind="InputPin" />
+                      <Pin Id="I7pVMvIHRIkLOc1ENUIbz7" Name="Output" Kind="OutputPin" />
+                    </Patch>
+                    <ControlPoint Id="Lo7uQG9g57CLudh0D4Tomv" Bounds="605,658" />
+                    <ControlPoint Id="O5dpQjNZpORNdHNSt4Rxs9" Bounds="605,723" />
+                    <Node Bounds="603,680,74,19" Id="G7UOVQZfMA4OjJftEJ8ObJ">
+                      <p:NodeReference LastCategoryFullName="Devices.SICK" LastSymbolSource="VL.Devices.SICK.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <Choice Kind="ProcessAppFlag" Name="GetVector2D" />
+                      </p:NodeReference>
+                      <Pin Id="PZPXE4TdHJ5MUUBGynaHKx" Name="Input" Kind="InputPin" />
+                      <Pin Id="D6Z8EI8dFBaMT5KDkXgOcy" Name="Output" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                </Node>
+              </Patch>
+              <ControlPoint Id="NKHzfq2VXA4OHz9MRzS1z3" Bounds="454,766" Name="Scandata Result" Alignment="Bottom" />
+              <ControlPoint Id="CDPJubz4CE0QaRQb8Ccjkq" Bounds="485,484" Name="Scandata Result" Alignment="Top" />
+              <ControlPoint Id="RtcPZyl8mDLOl6JxdOyY9y" Bounds="1586,766" Name="Raw Data String" Alignment="Bottom" />
+              <ControlPoint Id="NsAzt43faG6N5yKY99dGWv" Bounds="565,484" Name="Raw Data String" Alignment="Top" />
+              <ControlPoint Id="Bd6Q8xZxZUhLKn8sbSIrBX" Bounds="777,766" Name="Start Angle" Alignment="Bottom" />
+              <ControlPoint Id="Tjy0ge7m8OsONK8LPFzUOy" Bounds="793,484" Name="Start Angle" Alignment="Top" />
+              <ControlPoint Id="QFoioM1VprROZq0Uh1UktY" Bounds="982,766" Name="Scan Frequency" Alignment="Bottom" />
+              <ControlPoint Id="TuSzoaCX3DGQXQkrZZDfve" Bounds="998,484" Name="Scan Frequency" Alignment="Top" />
+              <ControlPoint Id="L9iTKzCddcxOgzgo75ziti" Bounds="1181,766" Name="Serial Number" Alignment="Bottom" />
+              <ControlPoint Id="RDGGpYYdlHwLeACNrziOkQ" Bounds="1183,484" Name="Serial Number" Alignment="Top" />
+              <ControlPoint Id="TSeu0lekc0mOdtxFvFQDir" Bounds="1383,766" Name="Device Status" Alignment="Bottom" />
+              <ControlPoint Id="T7Tx1UU8dNNQKYf8FHDhAl" Bounds="1385,484" Name="Device Status" Alignment="Top" />
+              <ControlPoint Id="PE0nRcv4zEMLE1cu5Wne3p" Bounds="593,766" Name="Points" Alignment="Bottom" />
+              <ControlPoint Id="ExKHb2ydrknMOxaeabeSb9" Bounds="592,484" Name="Points" Alignment="Top" />
+            </Node>
+            <ControlPoint Id="Rhc4YGcyH82N7pHQa9Rkxo" Bounds="343,452" />
+            <Node Bounds="120,639,102,26" Id="VXlJ10ZCQNmMobn9LXGZKu">
+              <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX" LastSymbolSource="VL.Devices.SICK.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsSocketConnected" />
+                <CategoryReference Kind="ClassType" Name="LMS1XX" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="JvoRQRPVCW8Ndl7zjzCabe" Name="Input" Kind="StateInputPin" />
+              <Pin Id="MORnbSkW8TpQQLscDcstxO" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="JfaoEx47fFVMFIlFKXqsUL" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="RMrdXvS0jUCONhWjrh8rF6" Bounds="219,701" />
+            <Pad Id="CcVMpQqTOwiOx8dg4NYZrO" SlotId="JP6klU9YXpyQdmkxIUbtjl" Bounds="355,419" />
+            <ControlPoint Id="BjEo24wZdt1LWEkTOxODLG" Bounds="454,849" />
+            <ControlPoint Id="Hlai5PQttbRPd2zatAX2oP" Bounds="1585,846" />
+            <Node Bounds="775,798,65,19" Id="G0qiCI6iLUwO6TmgGmUIDI">
+              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+              </p:NodeReference>
+              <Pin Id="NhnZ0YRsuu4LUi2qGd0zsf" Name="Async Notifications" Kind="InputPin" />
+              <Pin Id="HpbPmz87idyPdIPSZojXEv" Name="Reset" Kind="InputPin" />
+              <Pin Id="EZI9yA1WvDyOx6NF4QCfBH" Name="Value" Kind="OutputPin" />
+              <Pin Id="I8ZQCYidG3mO4bg8P1bthz" Name="On Data" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="980,802,65,19" Id="D5Zb4xx2ucEOxyYsnB7EOK">
+              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+              </p:NodeReference>
+              <Pin Id="UC1cQoiaJHhPp25Oxn1SoJ" Name="Async Notifications" Kind="InputPin" />
+              <Pin Id="P7U0YguqU7YP9pjMSMDyOi" Name="Reset" Kind="InputPin" />
+              <Pin Id="DIqOlnE8HSQLI5rkSqSjyD" Name="Value" Kind="OutputPin" />
+              <Pin Id="PyZWmjYzojrNjbSmrqnH4m" Name="On Data" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1179,806,65,19" Id="NwaGGIQ3FBtLjbk9pYqHOR">
+              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+              </p:NodeReference>
+              <Pin Id="N2Cxo4eVMWJOSfyQdcyBNV" Name="Async Notifications" Kind="InputPin" />
+              <Pin Id="Myzqk719S5iMdAK8FigDhK" Name="Reset" Kind="InputPin" />
+              <Pin Id="STmzVayqR8pOBZJv6aMqk7" Name="Value" Kind="OutputPin" />
+              <Pin Id="FXrNWJ2UmdQPyyeBpXei4p" Name="On Data" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="La6DQ3YslEDM3M9mtMnrm1" Bounds="777,849" />
+            <ControlPoint Id="I23ORfACIUDLlsMbeMuD1i" Bounds="982,849" />
+            <ControlPoint Id="UGIGFIl1xKoPdlSSfrdqlJ" Bounds="1181,849" />
+            <Node Bounds="1381,799,65,19" Id="VSxfzHspY18OVLtLpKuYkq">
+              <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+              </p:NodeReference>
+              <Pin Id="SfLi6oxM0aAMp3Qc1umAQY" Name="Async Notifications" Kind="InputPin" />
+              <Pin Id="J2RjwXTGVaNOvVKS93Y7y8" Name="Reset" Kind="InputPin" />
+              <Pin Id="Jz3LypVILp4N017bpzqrGp" Name="Value" Kind="OutputPin" />
+              <Pin Id="QAgo58S5cPbPNwnhwpZkf3" Name="On Data" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="VW09vjt88SwMCm4QDl9hQw" Bounds="1383,842" />
+            <ControlPoint Id="ONPSEbTDZhsNhSkl7bun2B" Bounds="593,847" />
+          </Canvas>
+          <Patch Id="Phq8zHr9MrHQXnwAmzBpWL" Name="Create" />
+          <Patch Id="FiILifYgMBzL0p6FDEGZlJ" Name="Update" ManuallySortedPins="true">
+            <Pin Id="VJKS5YM1qBPMoO2lMT8Nst" Name="IP Address" Kind="InputPin" Bounds="381,243" />
+            <Pin Id="GbQR31HIMudPLXoE3DfYfN" Name="Port" Kind="InputPin" Bounds="418,222" />
+            <Pin Id="BIS4NfUoGsrPyGdmGqWwAL" Name="Receive Timeout" Kind="InputPin" Bounds="449,247" Visibility="Optional" />
+            <Pin Id="VZv83pu9xUSNvuitZcki7U" Name="Send Timeout" Kind="InputPin" Bounds="484,261" Visibility="Optional" />
+            <Pin Id="I53aA5h8QYjPLOhgkGyRg2" Name="Force Connect" Kind="InputPin" Bounds="339,137" />
+            <Pin Id="MnsfWZLfytDPFh0VgpW7qJ" Name="Poll Data" Kind="InputPin" Bounds="414,441" />
+            <Pin Id="VUTlxo37p27LT35Xx0fgUP" Name="Scandata Result" Kind="OutputPin" Bounds="458,770" />
+            <Pin Id="OK1kdtPSLEoQVJ821d1Kpz" Name="Points" Kind="OutputPin" Bounds="589,843" />
+            <Pin Id="IXpL7CWnZf5M7kM0v09UBO" Name="Start Angle" Kind="OutputPin" Bounds="770,928" Visibility="Optional" />
+            <Pin Id="HFaFDl7pznINGSls8FSgpA" Name="Scan Frequency" Kind="OutputPin" Bounds="973,889" Visibility="Optional" />
+            <Pin Id="EzoRWabLymxPSyfwdsp6WZ" Name="Serial Number" Kind="OutputPin" Bounds="1186,887" Visibility="Optional" />
+            <Pin Id="UNR7JIEkixHLkRbbxGdtXV" Name="Raw Data String" Kind="OutputPin" Bounds="564,875" Visibility="Optional" />
+            <Pin Id="LxGqu1dGJbbNU05ze9MYbt" Name="Is Connected" Kind="OutputPin" Bounds="286,593" />
+            <Pin Id="OCIOFFlRVKbML3XTUb1hwf" MergeId="208350" Name="Device Status" Kind="OutputPin" Bounds="1186,887" />
+          </Patch>
+          <ProcessDefinition Id="NLtobK4eUQINfEMiffsOc4">
+            <Fragment Id="OHKQCG8EsBANfBkEPDbOaS" Patch="Phq8zHr9MrHQXnwAmzBpWL" Enabled="true" />
+            <Fragment Id="Nen7iVpB9WULYR2ZMGwx5o" Patch="FiILifYgMBzL0p6FDEGZlJ" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="DVF86LKvAQcO3GlZX3aLsC" Ids="Vb9fTa6lxY0MxGu8uWppIw,EtIKj8gbWGRNlpFauLXjuK" />
+          <Link Id="TK8mV8zG2fpNpvLnkX8Ixp" Ids="ToKMJOIdJY8NyWcDNzm9lV,GnobHeDdAWvP195fU4p9W2" />
+          <Link Id="CFpjl00UOJBMS0a6uLoKDz" Ids="KM7FGwHq8h9PP6wxPTNKqm,VpYCEvkZOWjNnVRi1JTVxT" />
+          <Link Id="SJdxKQ70TDrL9GhVfDcBmY" Ids="C4UTNn87u9ANWaliebKEFd,FoSqAX1dil6OotaQR1gSLe" />
+          <Link Id="Vhn4YenplJhPqp4JP5yKeo" Ids="RyCAUYPBrC1NU4I4sKLsWI,Vb9fTa6lxY0MxGu8uWppIw" />
+          <Link Id="LWS8wVgX4kKOZfXqnU6XRw" Ids="VJKS5YM1qBPMoO2lMT8Nst,RyCAUYPBrC1NU4I4sKLsWI" IsHidden="true" />
+          <Link Id="VO8PcrerqxYNPdymGRSJWv" Ids="Po24MTrZRrWMPWYIv6YeKz,ToKMJOIdJY8NyWcDNzm9lV" />
+          <Link Id="JrIOlMvfCW7Ovvd8ODdDh7" Ids="GbQR31HIMudPLXoE3DfYfN,Po24MTrZRrWMPWYIv6YeKz" IsHidden="true" />
+          <Link Id="ClLlA9Ja4kUNVggNA3b9OV" Ids="J2PfrT7frENLEOyLA673dd,KM7FGwHq8h9PP6wxPTNKqm" />
+          <Link Id="IYfCDVUf7IIPlkDPbx0Ygf" Ids="BIS4NfUoGsrPyGdmGqWwAL,J2PfrT7frENLEOyLA673dd" IsHidden="true" />
+          <Link Id="KeVxS1o56Z6OaAbdSJFOwT" Ids="OKOLUbEAfmwO3y6IMnh8J3,C4UTNn87u9ANWaliebKEFd" />
+          <Link Id="DGNdgA0MkR2NEISU7xwIuf" Ids="VZv83pu9xUSNvuitZcki7U,OKOLUbEAfmwO3y6IMnh8J3" IsHidden="true" />
+          <Link Id="Uij8KjBBg8UNZqIUvT0Hl4" Ids="IBnGVNvqZbfPAtbdAwAp2p,V45SkuO1KjrPDzNVcUBH4s" />
+          <Link Id="VoHddFhkl4XNbr3burehJU" Ids="AbvpkKbnGaxN7BNIZ6VgKE,VqfJRkS5bZ4O5uedkkqODm" />
+          <Link Id="HWLD4PJrnUBMeBU4cOsTu5" Ids="EUWkEcqh2idM72birGEbXX,OtkDxCfj4APLezlkbS1FkU" />
+          <Link Id="BC0NUCFGbSaNN5BOeGpzlC" Ids="I53aA5h8QYjPLOhgkGyRg2,EUWkEcqh2idM72birGEbXX" IsHidden="true" />
+          <Link Id="QahWM1a39xnMUW4iJzK6V4" Ids="S38O8DKcLwZLf8SQ3gkRau,I60thVwXCgWOxZc2tPzwRE" />
+          <Link Id="EEUlQVcyZLqOnfMELXT0NR" Ids="Rhc4YGcyH82N7pHQa9Rkxo,IibG7BGukZXOtRNesM5FaH" />
+          <Link Id="HLPZzX6bOxJMWNB3uVIxTZ" Ids="MnsfWZLfytDPFh0VgpW7qJ,Rhc4YGcyH82N7pHQa9Rkxo" IsHidden="true" />
+          <Link Id="P7IVMWKI4iMQBf8l8qOAYW" Ids="JfaoEx47fFVMFIlFKXqsUL,RMrdXvS0jUCONhWjrh8rF6" />
+          <Link Id="EusXXZAB7JUN6iLljOK5j4" Ids="RMrdXvS0jUCONhWjrh8rF6,LxGqu1dGJbbNU05ze9MYbt" IsHidden="true" />
+          <Link Id="PVgDoZiZAbHOBYSRR65KpZ" Ids="VqfJRkS5bZ4O5uedkkqODm,CcVMpQqTOwiOx8dg4NYZrO" />
+          <Slot Id="JP6klU9YXpyQdmkxIUbtjl" Name="LIDAR" />
+          <Link Id="DLqXA6ZR811QdYo1EhsIUg" Ids="CcVMpQqTOwiOx8dg4NYZrO,RHuEdUu9IzRLdQqLwIim7S" />
+          <Link Id="JpERTs6OjgLPJOmYfti7bV" Ids="CcVMpQqTOwiOx8dg4NYZrO,JvoRQRPVCW8Ndl7zjzCabe" />
+          <Link Id="VLeuk9e7uuBLnldJnqQI4V" Ids="CDPJubz4CE0QaRQb8Ccjkq,NKHzfq2VXA4OHz9MRzS1z3" IsFeedback="true" />
+          <Link Id="OGtTw8ViZPANE17xVyRVJx" Ids="HuoWy2NMNDiQLAqfwxT4QM,NKHzfq2VXA4OHz9MRzS1z3" />
+          <Link Id="GmBsfK4nmcgOrWgJt7M7Yx" Ids="NKHzfq2VXA4OHz9MRzS1z3,BjEo24wZdt1LWEkTOxODLG" />
+          <Link Id="UR3sxnRCyMxM4rMyzNCfY7" Ids="BjEo24wZdt1LWEkTOxODLG,VUTlxo37p27LT35Xx0fgUP" IsHidden="true" />
+          <Link Id="SSBcA7RtkrAOy9zdyS5tPb" Ids="AUD5H2SkvhPNKk6xf1gatE,CyVsMjQjLjePJd5hCwLV8r" IsHidden="true" />
+          <Link Id="ITvdzdHu39DL48lffgfKME" Ids="COjF6SrUzj5NEjmiMejmaw,L7hCNrKBQ35MtCFYQeLb0b" IsHidden="true" />
+          <Link Id="ES5Gjb0WBaOL9wKjjLsPGl" Ids="CyVsMjQjLjePJd5hCwLV8r,O0uSikHKV48PwTBMu9JQyO" />
+          <Link Id="H1qKWR49vjXN8vezpBjNRO" Ids="DLOH6UKMXyPMGd3oaMi6RN,COjF6SrUzj5NEjmiMejmaw" />
+          <Link Id="BJ2m7EG8PFTNnHoCNAVzcT" Ids="NsAzt43faG6N5yKY99dGWv,RtcPZyl8mDLOl6JxdOyY9y" IsFeedback="true" />
+          <Link Id="E5SlugGcUe0OvbbSMOTTlk" Ids="Bgf4Cq3sC5dM7P6fwBuvaN,RtcPZyl8mDLOl6JxdOyY9y" />
+          <Link Id="Rnpga8UbL0WOmsi4jYgVVw" Ids="HuoWy2NMNDiQLAqfwxT4QM,UrV9ajLm6eBNacMEizhfsL" />
+          <Link Id="IWOosO0EG01Ps0Bvkcu9HO" Ids="RtcPZyl8mDLOl6JxdOyY9y,Hlai5PQttbRPd2zatAX2oP" />
+          <Link Id="Kwj0lEhyge9OtfD4xf30YB" Ids="Hlai5PQttbRPd2zatAX2oP,UNR7JIEkixHLkRbbxGdtXV" IsHidden="true" />
+          <Link Id="Iq3lzmN6I0PLziORvhSBgR" Ids="Iglk4zUSaOmPvxUUV3vahj,UI8DI3s0bM4M9ollh6eSPC" IsHidden="true" />
+          <Link Id="EkgoW2fcDKFMp1vctNbEBw" Ids="I24hcfHeC2SPkBQuR0aUis,VHPDCfo2nwXOWjgFhQU5O6" IsHidden="true" />
+          <Link Id="NLkmfUDLPg6OYWPufB2c2b" Ids="UI8DI3s0bM4M9ollh6eSPC,OIYf67gbwoNQQ0cGbfsOhx" />
+          <Link Id="RgLJ00DNSVfOKxf28s8l4f" Ids="HuoWy2NMNDiQLAqfwxT4QM,Dyno9M9wVYPN1e3xOJNEgk" />
+          <Link Id="IkUe7p5X2INNQTd04CMn3w" Ids="Tjy0ge7m8OsONK8LPFzUOy,Bd6Q8xZxZUhLKn8sbSIrBX" IsFeedback="true" />
+          <Link Id="BTpRj2ZFCeUPeWVT5W6hdU" Ids="NkKNCdkCIGcMJrFfDDJymW,Bd6Q8xZxZUhLKn8sbSIrBX" />
+          <Link Id="F45bKDYlH2nMs55p1U4tW5" Ids="VdA5DSOVQomPnm4oNbI7za,I24hcfHeC2SPkBQuR0aUis" />
+          <Link Id="Hdmum0qqyNRP4vbrMb4Rs1" Ids="Tqdsxae9yKcLGhZU70xle3,CUPVl3o4u1eOUbfly1rkUD" IsHidden="true" />
+          <Link Id="MlTSwW8PCf4Nvid7NizAfm" Ids="NOpzOeiaInmP0e5Md8MYl0,Si3N1U49KNcOF0PXBzb2s3" IsHidden="true" />
+          <Link Id="Ia84PnCGftcLAnme28KmCX" Ids="CUPVl3o4u1eOUbfly1rkUD,B5iJQH2AJIvPh1wHCanq8W" />
+          <Link Id="ATPjl8vcDpDMOSACmnam4I" Ids="R1uT55yPoFoLYGVfs6aq0Z,NOpzOeiaInmP0e5Md8MYl0" />
+          <Link Id="RSL0P4oaiaJPFigmMAKn0G" Ids="TuSzoaCX3DGQXQkrZZDfve,QFoioM1VprROZq0Uh1UktY" IsFeedback="true" />
+          <Link Id="GEmnhoEtTq4Od2WCBLmTm4" Ids="BjKFkpEan5OPis4voWoyVW,QFoioM1VprROZq0Uh1UktY" />
+          <Link Id="T9tRwqH7RI8OjUG5QVgkhK" Ids="HuoWy2NMNDiQLAqfwxT4QM,TIt56YXnhSpNgs0yihsB0H" />
+          <Link Id="Dlx0LVvbBAHMyHUCig8cmU" Ids="RJZe7VVMhwROnHYjINxDir,S76w1w7fe9KPzu4wipMm8i" IsHidden="true" />
+          <Link Id="DI6Z8FUVut4QWk8rJ8bhpf" Ids="KoEzXB7dVY8PQd2qFXQiy7,Se1UfUy7YeUMv6lKdRbnqV" IsHidden="true" />
+          <Link Id="LSxOwFR5NWdMPn5z89V2lK" Ids="S76w1w7fe9KPzu4wipMm8i,JZSUwAXcTKEMHZhZqwALEt" />
+          <Link Id="CVXUEX92rmqNkID5uQG0lS" Ids="HuoWy2NMNDiQLAqfwxT4QM,HOiyCx4z6EgQD6TWDUjutS" />
+          <Link Id="NRyuWywJqTHO88Q4t5mnCz" Ids="A8eRujPc40aNZnbyXoDt4x,KoEzXB7dVY8PQd2qFXQiy7" />
+          <Link Id="U0aebIzFp1FQa2ck44Fe24" Ids="RDGGpYYdlHwLeACNrziOkQ,L9iTKzCddcxOgzgo75ziti" IsFeedback="true" />
+          <Link Id="FP3D1VGMI1zMDVBEjVfQ5r" Ids="M4FlkK0rHtYN4AYQWSLCOV,L9iTKzCddcxOgzgo75ziti" />
+          <Link Id="EoMhjbZstOaOEbxTbzK3yA" Ids="Bd6Q8xZxZUhLKn8sbSIrBX,NhnZ0YRsuu4LUi2qGd0zsf" />
+          <Link Id="G2QVvIjFWXTO5y11yMLCVI" Ids="QFoioM1VprROZq0Uh1UktY,UC1cQoiaJHhPp25Oxn1SoJ" />
+          <Link Id="MridpI132dVOP74wJicCNM" Ids="L9iTKzCddcxOgzgo75ziti,N2Cxo4eVMWJOSfyQdcyBNV" />
+          <Link Id="J2Ds2FH0HapMq59dakIFmq" Ids="EZI9yA1WvDyOx6NF4QCfBH,La6DQ3YslEDM3M9mtMnrm1" />
+          <Link Id="QWPpSPYJn7COv3X6HrQIVv" Ids="La6DQ3YslEDM3M9mtMnrm1,IXpL7CWnZf5M7kM0v09UBO" IsHidden="true" />
+          <Link Id="MSob8vOLffbNVqviA2TQpd" Ids="DIqOlnE8HSQLI5rkSqSjyD,I23ORfACIUDLlsMbeMuD1i" />
+          <Link Id="LdTp3ZaBUJVNnJZ1Zm3TlC" Ids="I23ORfACIUDLlsMbeMuD1i,HFaFDl7pznINGSls8FSgpA" IsHidden="true" />
+          <Link Id="QNEN4rb6XcnP5qnjih41Nh" Ids="STmzVayqR8pOBZJv6aMqk7,UGIGFIl1xKoPdlSSfrdqlJ" />
+          <Link Id="PSOci8IhSbALxF27AQ31We" Ids="UGIGFIl1xKoPdlSSfrdqlJ,EzoRWabLymxPSyfwdsp6WZ" IsHidden="true" />
+          <Link Id="Hu1XCOwXVm4M4090GyxR1S" Ids="KOMNNh3GclCLto88N5iIrq,Kd3N2rBWh4wOmY9u8Zxbqz" IsHidden="true" />
+          <Link Id="FvTJWC3SvQPOrsw147lnU4" Ids="V7Rf4M93NQjMxnjtyszLLa,CfTItcJyflaLuSChTK4arD" IsHidden="true" />
+          <Link Id="RbEsQfzMDZ2P5qQhlJphGD" Ids="Kd3N2rBWh4wOmY9u8Zxbqz,GXseuGawWImMZ6OaStISCm" />
+          <Link Id="B0sh0tenb7OOrKrnM4jxbz" Ids="HuoWy2NMNDiQLAqfwxT4QM,Mgtd60ttOEoOmrlSY3aVcL" />
+          <Link Id="RrPzUeHmtvsMxT2DCSEeR2" Ids="QWGjMAevyfSOVgnIsJBJrr,V7Rf4M93NQjMxnjtyszLLa" />
+          <Link Id="KMWN6WQKTARLTTx7y2e5fx" Ids="T7Tx1UU8dNNQKYf8FHDhAl,TSeu0lekc0mOdtxFvFQDir" IsFeedback="true" />
+          <Link Id="AtfXECa2DQrOHv8kycrGvU" Ids="Vi4T8OCgMyYL7DgGxfTf9R,TSeu0lekc0mOdtxFvFQDir" />
+          <Link Id="QgwwmybJoAFLiKdAQSLNTW" Ids="Jz3LypVILp4N017bpzqrGp,VW09vjt88SwMCm4QDl9hQw" />
+          <Link Id="IH5vV2SpLVxLeBeQBAlyPh" Ids="VW09vjt88SwMCm4QDl9hQw,OCIOFFlRVKbML3XTUb1hwf" IsHidden="true" />
+          <Link Id="VYkuClIMJhgNCB96v1QAvd" Ids="TSeu0lekc0mOdtxFvFQDir,SfLi6oxM0aAMp3Qc1umAQY" />
+          <Link Id="UbMkvDjELwSOWqTCQ051Jv" Ids="QCqeNqVW9j9MZB2BXtuvhP,Lo7uQG9g57CLudh0D4Tomv" IsHidden="true" />
+          <Link Id="Q7Ln5luFtwUM8BzYxqMX56" Ids="O5dpQjNZpORNdHNSt4Rxs9,I7pVMvIHRIkLOc1ENUIbz7" IsHidden="true" />
+          <Link Id="I3JqNaMOtqVQFHnB65cwXo" Ids="Lo7uQG9g57CLudh0D4Tomv,PZPXE4TdHJ5MUUBGynaHKx" />
+          <Link Id="R11ih5Zn0pSOILLlgE72We" Ids="D6Z8EI8dFBaMT5KDkXgOcy,O5dpQjNZpORNdHNSt4Rxs9" />
+          <Link Id="QYlUsRcHDT5Nw5j98qdiDN" Ids="HuoWy2NMNDiQLAqfwxT4QM,H4oTZBVGw0yLGBrOVwbsNu" />
+          <Link Id="UU6YTL6Ra3PNlzmOJHComR" Ids="ExKHb2ydrknMOxaeabeSb9,PE0nRcv4zEMLE1cu5Wne3p" IsFeedback="true" />
+          <Link Id="FxdAKaAH7R6M6AMZSN6WPP" Ids="J8Src3LNXlSLFuxEOsnY5S,PE0nRcv4zEMLE1cu5Wne3p" />
+          <Link Id="KbC4ZBSdOfxPhFyEYC4mbI" Ids="PE0nRcv4zEMLE1cu5Wne3p,ONPSEbTDZhsNhSkl7bun2B" />
+          <Link Id="SNlA44Zmly7OEsWkFAyWSz" Ids="ONPSEbTDZhsNhSkl7bun2B,OK1kdtPSLEoQVJ821d1Kpz" IsHidden="true" />
+        </Patch>
+      </Node>
+      <Canvas Id="SJzlRAJHY9IOWai7Dl3JId" Name="Internal" Position="379,373">
+        <!--
+
+    ************************ GetVector2D ************************
+
+-->
+        <Node Name="GetVector2D" Bounds="365,297" Id="Tiy4x8rzYMmLd6ZYWRU47W">
+          <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+            <Choice Kind="ContainerDefinition" Name="Process" />
+          </p:NodeReference>
+          <Patch Id="E4uPB6uR7StPmI0a4kCrjO">
+            <Canvas Id="Pm290mDHzgANqvgapAnCOT" CanvasType="Group">
+              <Node Bounds="742,455,86,26" Id="OkFfPfqgUUkLMvidzc8yMq">
+                <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX.LMDScandataResult" LastSymbolSource="VL.Devices.SICK.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="LMDScandataResult" />
+                  <Choice Kind="OperationCallFlag" Name="AmountOfData" />
+                </p:NodeReference>
+                <Pin Id="I7KRHgJp2H1OiVbB7u9Q3Y" Name="Input" Kind="StateInputPin" />
+                <Pin Id="FCMpebpWLv7ODz4qF69myn" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="BnVM4mWaV2TPDf9GJQaP9D" Name="Amount Of Data" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="CQX4v5mCMEzMjxK1R5UbAp" Bounds="427,414" />
+              <Node Bounds="425,455,86,26" Id="EEYDchFboPnPTka48PWhk7">
+                <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX.LMDScandataResult" LastSymbolSource="VL.Devices.SICK.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="StartAngle" />
+                  <CategoryReference Kind="ClassType" Name="LMDScandataResult" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="B2QuTr5fRdAPflrPraFeGo" Name="Input" Kind="StateInputPin" />
+                <Pin Id="RFrQ9CmZ0HyPHdVXVOuW8F" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="KVy52iyootjPspApN7aGXl" Name="Start Angle" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="424,641,86,26" Id="UOmzQIsuTyQPeFoVR0SFhL">
+                <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX.LMDScandataResult" LastSymbolSource="VL.Devices.SICK.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="DistancesData" />
+                  <CategoryReference Kind="ClassType" Name="LMDScandataResult" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="Sg0j3CsPXCqOH2tcyZaX1h" Name="Input" Kind="StateInputPin" />
+                <Pin Id="DwbVJNiI6qsN3GFn0mR6r4" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="GWaLZgRiD7yN3j4cNAlc3h" Name="Distances Data" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="436,686,143,116" Id="AG1zbltuZxLOpKiV9pxa4z">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                </p:NodeReference>
+                <Pin Id="CuTlcClhxtXNFOaUOfijZo" Name="Break" Kind="OutputPin" />
+                <Patch Id="O0SYLOx5reWMHYVJp4pnwy" ManuallySortedPins="true">
+                  <Patch Id="FL2YPOzqJ67Lwgnt9azAhm" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="F3CmgzrHHhaPkbwE4GCTjS" Name="Update" ManuallySortedPins="true" />
+                  <Patch Id="UL915SICRlcPM45fr2L0KG" Name="Dispose" ManuallySortedPins="true" />
+                  <Node Bounds="448,756,62,19" Id="EVseW3ZLkgkNKTJytdGldI">
+                    <p:NodeReference LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="FromPolar" />
+                    </p:NodeReference>
+                    <Pin Id="V8hsrAw6vXOOu34Q2EEavm" Name="Angle" Kind="InputPin" />
+                    <Pin Id="CPJhpyBoN82OcWmFOHJhrp" Name="Radius" Kind="InputPin" />
+                    <Pin Id="QHJpxBinkdsQW9rMXqvxKG" Name="Output" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="505,724,62,19" Id="Q8LWUClAqjaMxvWsHCehqY">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                    </p:NodeReference>
+                    <Pin Id="DgcrqRZgFDKMnK4EoD5LRI" Name="Input" Kind="InputPin" />
+                    <Pin Id="FS6sCfVnotNO2MonyG5qVY" Name="Result" Kind="OutputPin" />
+                  </Node>
+                </Patch>
+                <ControlPoint Id="AeyqP8UMzedPGjYXQctNHm" Bounds="507,692" Alignment="Top" />
+                <ControlPoint Id="IDIZLzo68DUMTPHRRigwC5" Bounds="450,692" Alignment="Top" />
+                <ControlPoint Id="UX2xiJJuaoqN1MlcM0hK7l" Bounds="450,796" Alignment="Bottom" />
+              </Node>
+              <Node Bounds="506,599,323,19" Id="IHVTrZv8GQfO57AfMisOA4">
+                <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="LinearSpread" />
+                </p:NodeReference>
+                <Pin Id="Fzg7pZZFRpILk17XlicXGI" Name="Center" Kind="InputPin" DefaultValue="-0.25">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="U4kYIL9f45dPxhKIs4Udk1" Name="Width" Kind="InputPin" />
+                <Pin Id="KFpRox2CcIxPyYIMwbLJjU" Name="Count" Kind="InputPin" />
+                <Pin Id="KATC6nOepdRNF8pm6h6lCu" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="542,455,128,26" Id="LxASLkSXrDzNJBP4NF5IJ3">
+                <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX.LMDScandataResult" LastSymbolSource="VL.Devices.SICK.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="SizeOfSingleAngularStep" />
+                  <CategoryReference Kind="ClassType" Name="LMDScandataResult" NeedsToBeDirectParent="true" />
+                </p:NodeReference>
+                <Pin Id="OgPIUecWWfYNpPtnCJQKvX" Name="Input" Kind="StateInputPin" />
+                <Pin Id="AEsh2f6MdKPLGWNWI12Z05" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="RWUFV7U2FNiQD6vp4yZlzJ" Name="Size Of Single Angular Step" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="665,499,25,19" Id="OHZZLBOsbNWLe6oXrSzMZV">
+                <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="*" />
+                </p:NodeReference>
+                <Pin Id="LWCvpROKZTWMbkNeF6gU83" Name="Input" Kind="InputPin" />
+                <Pin Id="CNGc3QjwuAkLn65ZSY0YGR" Name="Input 2" Kind="InputPin" DefaultValue="541">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Float64" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="BJWqC7lSgktLPO7BFPlRvv" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="665,533,89,26" Id="LxZPv2075e6QQStcN40RpC">
+                <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="DegreeToCycles" />
+                </p:NodeReference>
+                <Pin Id="NGDFgDe1n3BM9YfwBVIsxn" Name="Input" Kind="InputPin" />
+                <Pin Id="OgZdloPxLczNezLraqjFJh" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="506,506,89,26" Id="IDC2Mwa9pxVMDOcrwnCb6z">
+                <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="DegreeToCycles" />
+                </p:NodeReference>
+                <Pin Id="IezRYqDk3EnP0qvltF1r3J" Name="Input" Kind="InputPin" />
+                <Pin Id="DTEY236UMB8QWHRQeb0I6n" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="665,566,62,19" Id="OoHXTS1HaLkL97mMhzntU4">
+                <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                </p:NodeReference>
+                <Pin Id="EuZBJAdJXr5P2NmbKgywLK" Name="Input" Kind="InputPin" />
+                <Pin Id="CeF2Iwzgb4eM7QRPTviof7" Name="Result" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="H7mPCq2RJvtPTjGDLuK0w6" Bounds="449,851" />
+            </Canvas>
+            <Patch Id="SnqXvZMXKYoQUbhniWYa0P" Name="Create" />
+            <Patch Id="F1lFhctTZJ5MVzN6EDoMWb" Name="Update">
+              <Pin Id="TQEbomVMA8TNFJgUWFdao8" Name="Input" Kind="InputPin" Bounds="542,409" />
+              <Pin Id="JoByEFe2Cj7NLU0vFnAXhZ" Name="Output" Kind="OutputPin" Bounds="449,853" />
+            </Patch>
+            <!--
+
+    ************************  ************************
+
+-->
+            <ProcessDefinition Id="LDpDhXSCNIzOAINiQQP9R3">
+              <Fragment Id="NuSp97sF5zXQaB0NSp1v8t" Patch="SnqXvZMXKYoQUbhniWYa0P" Enabled="true" />
+              <Fragment Id="AeO5skr97z9LbgIqMs7vq1" Patch="F1lFhctTZJ5MVzN6EDoMWb" Enabled="true" />
+            </ProcessDefinition>
+            <Link Id="VH5H5oxY6JgMR2XxkL2zNs" Ids="CQX4v5mCMEzMjxK1R5UbAp,I7KRHgJp2H1OiVbB7u9Q3Y" />
+            <Link Id="EZEkwsFxIQGMGr1LNe8Fmk" Ids="TQEbomVMA8TNFJgUWFdao8,CQX4v5mCMEzMjxK1R5UbAp" IsHidden="true" />
+            <Link Id="Acdi4gQQXelLF3yTxvMgAd" Ids="CQX4v5mCMEzMjxK1R5UbAp,B2QuTr5fRdAPflrPraFeGo" />
+            <Link Id="One6geOmq0QOoT01qZHEKV" Ids="RFrQ9CmZ0HyPHdVXVOuW8F,Sg0j3CsPXCqOH2tcyZaX1h" />
+            <Link Id="TAfRzxFZyorL8AZbK88cC9" Ids="GWaLZgRiD7yN3j4cNAlc3h,AeyqP8UMzedPGjYXQctNHm" />
+            <Link Id="FR1J3RJjUvFLO7fVOmMRDG" Ids="AeyqP8UMzedPGjYXQctNHm,DgcrqRZgFDKMnK4EoD5LRI" />
+            <Link Id="PfTmtOEokJHPvV88N5d4Ni" Ids="FS6sCfVnotNO2MonyG5qVY,CPJhpyBoN82OcWmFOHJhrp" />
+            <Link Id="SDydk3fw2muM2rPdsWi12v" Ids="BnVM4mWaV2TPDf9GJQaP9D,KFpRox2CcIxPyYIMwbLJjU" />
+            <Link Id="QjnrGFM0YejMM6bk0ZVNmH" Ids="RWUFV7U2FNiQD6vp4yZlzJ,LWCvpROKZTWMbkNeF6gU83" />
+            <Link Id="GezgLtaQwucNeKjKiPYI5e" Ids="CQX4v5mCMEzMjxK1R5UbAp,OgPIUecWWfYNpPtnCJQKvX" />
+            <Link Id="BxNY2wo6fKpPfrfdGkvl9B" Ids="BnVM4mWaV2TPDf9GJQaP9D,CNGc3QjwuAkLn65ZSY0YGR" />
+            <Link Id="UKsQlaGHRoyMtd6oX2LFup" Ids="BJWqC7lSgktLPO7BFPlRvv,NGDFgDe1n3BM9YfwBVIsxn" />
+            <Link Id="UoecF6TtV2WOD4whvXItFq" Ids="KVy52iyootjPspApN7aGXl,IezRYqDk3EnP0qvltF1r3J" />
+            <Link Id="LnC2OhNmZYQN0fUaIy6nIw" Ids="CeF2Iwzgb4eM7QRPTviof7,U4kYIL9f45dPxhKIs4Udk1" />
+            <Link Id="DrEmvO3HmzhOjEUIzfvw5u" Ids="OgZdloPxLczNezLraqjFJh,EuZBJAdJXr5P2NmbKgywLK" />
+            <Link Id="IKU1ZsX7mPxM0jFVk585iI" Ids="KATC6nOepdRNF8pm6h6lCu,IDIZLzo68DUMTPHRRigwC5" />
+            <Link Id="HVJg3INPbHOPbSrTMjO87f" Ids="IDIZLzo68DUMTPHRRigwC5,V8hsrAw6vXOOu34Q2EEavm" />
+            <Link Id="CRTdXr9abIOPUSVL0ete1w" Ids="QHJpxBinkdsQW9rMXqvxKG,UX2xiJJuaoqN1MlcM0hK7l" />
+            <Link Id="Lo3nai1YHw0OEcyxdWrUg1" Ids="UX2xiJJuaoqN1MlcM0hK7l,H7mPCq2RJvtPTjGDLuK0w6" />
+            <Link Id="IauNXsXGq0ELzlwJiF3LYg" Ids="H7mPCq2RJvtPTjGDLuK0w6,JoByEFe2Cj7NLU0vFnAXhZ" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Lm7ahSPlt41NmfqkW9371q">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="V50UxI0uzSLN5dZ8EIWP8F">
+        <Canvas Id="QWasXOcVqrlPHPIJE2Oglq" CanvasType="Group" />
+        <Patch Id="HOLduYtO2U2PjUW9BRnJyE" Name="Create" />
+        <Patch Id="PJhWUWPrB3hP5HgaP2IT5k" Name="Update" />
+        <ProcessDefinition Id="AX9CPm3ykgcPUQ34pbF8l9">
+          <Fragment Id="D34VKBMhEXIOVfs4wUfwmp" Patch="HOLduYtO2U2PjUW9BRnJyE" Enabled="true" />
+          <Fragment Id="UMZiw1WWBE9PVV9mfwq5yh" Patch="PJhWUWPrB3hP5HgaP2IT5k" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="IHH5UW3Hh47NuImOSyYGAy" Location="VL.Skia" Version="2019.1.0-0411-gf6daa4918b" />
+  <NugetDependency Id="P9IJmSz85qoNfsX4bff0j3" Location="LMS1XX" Version="1.0.0-CI-20190723-142748" />
+</Document>
