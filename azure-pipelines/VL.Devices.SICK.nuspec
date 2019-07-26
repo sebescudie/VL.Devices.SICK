@@ -17,6 +17,6 @@
   </metadata> 
   <files>
     <file src="..\VL.Devices.SICK.vl" target="" exclude="" />
-    <file src="..\examples\*vl" target="" exclude="" />
+    <file src="..\help\*vl" target="" exclude="" />
   </files>
 </package>
