@@ -12,7 +12,7 @@
     <description>A VL plugin to interact with SICK LIDARs</description>
     <tags>lidar vl</tags>
     <dependencies>
-      <dependency id="LMS1XX" version="1.0.0-CI-20190724-081124"/>
+      <dependency id="LMS1XX" version="1.0.0-CI-20190730-133743"/>
     </dependencies> 
   </metadata> 
   <files>
