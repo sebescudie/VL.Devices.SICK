@@ -20,4 +20,5 @@ Then press F1 to open the help browser and open the basics help patch. Tested wi
 
 ## Notes
 
-This plugin is a work in progress, don't hesitate to test, report and contribute!
+This plugin is a work in progress, things here and there are still buggy so do not use for production!
+Also, don't hesitate to test and contribute.
