@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="TpKhmrz3dHCQMUvfKXhxUI" LanguageVersion="2019.1.0-0411-gf6daa4918b" Version="0.128">
+  <NugetDependency Id="AmzhFzIr4UIPGNy1PdPO86" Location="VL.CoreLib" Version="2019.1.0-411" />
+  <Patch Id="IDTg7AOlmd2OGGNtyig2yp">
+    <Canvas Id="GGOfLpbaPdJLWTdji0Xdl8" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="MIat09ObVxsPTvWI9DSMrI">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="MSqr2tpWjKUPkWev36xV3H">
+        <Canvas Id="Oq4VUTLtAs4NyswaS0XA1e" CanvasType="Group">
+          <Pad Id="CbqeCRlZQRBPn1WwmV1C2A" Bounds="76,83,419,41" ShowValueBox="true" isIOBox="true" Value="Send commands to the LIDAR">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">20</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TEA8wC4mlPDM15mHNqsngp" Bounds="76,131,382,41" ShowValueBox="true" isIOBox="true" Value="This patch shows how to use advanced nodes to send specific commands to the LIDAR">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="361,420" Id="C4GpGnxqsHJQHpQuATqCWG">
+            <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX" LastSymbolSource="VL.Devices.SICK.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Devices" />
+              <CategoryReference Kind="Category" Name="SICK" />
+              <CategoryReference Kind="ClassType" Name="LMS1XX" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="IVf7mFDSCqWLWImWXsBL8B" Name="Ip Adress" Kind="InputPin" />
+            <Pin Id="JOePudK4suxQLuIzCEQbUp" Name="Port" Kind="InputPin" />
+            <Pin Id="I3VuawlxeCILVUh5E8Emkm" Name="Receive Timeout" Kind="InputPin" />
+            <Pin Id="IcfQHgwJICsLy1f8lHy4Fm" Name="Send Timeout" Kind="InputPin" />
+            <Pin Id="DYqBOIfauOTPrCMC8GDiHK" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="TiMpNJw4CBeMQ533AFrIwm" SlotId="Rt7jV3ZFd4DMehaL9Gn5vU" Bounds="363,478" />
+          <Pad Id="QnXHccjG5BfNhrIjx5EJfG" Comment="Ip Adress" Bounds="363,364,103,15" ShowValueBox="true" isIOBox="true" Value="192.168.1.52">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="PRRxuUVDMijObGOlDMYHmH" Comment="Port" Bounds="383,392,53,15" ShowValueBox="true" isIOBox="true" Value="2112">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="361,564,45,19" Id="KR7AdGfm0RVMeM2zUq0xYa">
+            <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX" LastSymbolSource="VL.Devices.SICK.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Devices" />
+              <CategoryReference Kind="Category" Name="SICK" />
+              <CategoryReference Kind="ClassType" Name="LMS1XX" />
+              <Choice Kind="ProcessAppFlag" Name="Login" />
+            </p:NodeReference>
+            <Pin Id="KKavMwPEO43MXsOo073bfZ" Name="Input" Kind="InputPin" />
+            <Pin Id="C5sEHlZPBx0NdV0EhKrAQ0" Name="User Level" Kind="InputPin" />
+            <Pin Id="Lt4tcjWNlnsOn3YXloSvVI" Name="Login" Kind="InputPin" />
+            <Pin Id="KjYBwPBxn3xP3i5JjWQwPN" Name="Changed User Level" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="361,608,65,19" Id="AIQw2vuhjunPpuBv0xK840">
+            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+            </p:NodeReference>
+            <Pin Id="Pfk14BkMMP1LaiUeEumcTW" Name="Async Notifications" Kind="InputPin" />
+            <Pin Id="B75AFLfkZ2mQKbu6WmSaRB" Name="Reset" Kind="InputPin" />
+            <Pin Id="Hp4txN2ZfAMM3r6VSIEbCI" Name="Value" Kind="OutputPin" />
+            <Pin Id="BVx3MTZEDXbN5bxQov60iV" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Pad Id="OYeVtO7pRfYQTK5S8IT01k" Comment="On Data" Bounds="423,644,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GnO8Vj7HzlxM5u944yNrEa" Comment="Changed User Level" Bounds="363,671,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AJ10cIxPRBnNZCcGz22Jwj" Comment="User Level" Bounds="383,509,124,15" ShowValueBox="true" isIOBox="true" Value="SERVICE">
+            <p:TypeAnnotation LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
+              <Choice Kind="TypeFlag" Name="UserLevel" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Tq6OQP1j3U9Pwl3oGV10Q5" Comment="Login" Bounds="403,544,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="179,552,102,26" Id="OyOxGZKVqX0M5q3UIByRUI">
+            <p:NodeReference LastCategoryFullName="Devices.SICK.LMS1XX" LastSymbolSource="VL.Devices.SICK.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="IsSocketConnected" />
+            </p:NodeReference>
+            <Pin Id="OUWh5EtoBSTOeiSCdKjOaA" Name="Input" Kind="StateInputPin" />
+            <Pin Id="FveZ8M5XV6NO87djFf7fqT" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="HBz9FtCcVfKNDEpkSyb8zj" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="J6Gs9ytxP0wNneZ0yVhjsl" Comment="" Bounds="278,599,-9,-35" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="PMAQ8ayYGANPriWaj76XcH" Name="Create" ParticipatingElements="CXgwnbdAAdXMKj7NwGcTs6" />
+        <Patch Id="PiwYJWAJPHcNnMDS4Fcgua" Name="Update" />
+        <ProcessDefinition Id="FnpewmkhrdfL5Qu2pKXq6r">
+          <Fragment Id="SSjspoW6ORdPwxaiwL5YXj" Patch="PMAQ8ayYGANPriWaj76XcH" Enabled="true" />
+          <Fragment Id="Ushsx4q3qvTPZnsMXY4LDU" Patch="PiwYJWAJPHcNnMDS4Fcgua" Enabled="true" />
+        </ProcessDefinition>
+        <Slot Id="Rt7jV3ZFd4DMehaL9Gn5vU" Name="Device" />
+        <Link Id="CXgwnbdAAdXMKj7NwGcTs6" Ids="DYqBOIfauOTPrCMC8GDiHK,TiMpNJw4CBeMQ533AFrIwm" />
+        <Link Id="N6q5UMDyq5vPfTDjgxgoI6" Ids="QnXHccjG5BfNhrIjx5EJfG,IVf7mFDSCqWLWImWXsBL8B" />
+        <Link Id="Hm1KN2QvuKeN0LxxpvO7WA" Ids="PRRxuUVDMijObGOlDMYHmH,JOePudK4suxQLuIzCEQbUp" />
+        <Link Id="MoSRUzRs5CaMoXBEyHGwp6" Ids="TiMpNJw4CBeMQ533AFrIwm,KKavMwPEO43MXsOo073bfZ" />
+        <Link Id="RFxvU9cckxYP4DpyeSwx3A" Ids="KjYBwPBxn3xP3i5JjWQwPN,Pfk14BkMMP1LaiUeEumcTW" />
+        <Link Id="OYWOKMD2IbhNKaPMw9iw3M" Ids="BVx3MTZEDXbN5bxQov60iV,OYeVtO7pRfYQTK5S8IT01k" />
+        <Link Id="INVrZM5uKsdOX9pqFnzfaw" Ids="Hp4txN2ZfAMM3r6VSIEbCI,GnO8Vj7HzlxM5u944yNrEa" />
+        <Link Id="JjUagj1RMTZN8mIS3VFUMj" Ids="AJ10cIxPRBnNZCcGz22Jwj,C5sEHlZPBx0NdV0EhKrAQ0" />
+        <Link Id="GiEioHFodGrMtq1SygL3dG" Ids="Tq6OQP1j3U9Pwl3oGV10Q5,Lt4tcjWNlnsOn3YXloSvVI" />
+        <Link Id="MceC1pYmfilMwLG4heMhYv" Ids="TiMpNJw4CBeMQ533AFrIwm,OUWh5EtoBSTOeiSCdKjOaA" />
+        <Link Id="UXW4yJvKOAWQN4b2BNmNQz" Ids="HBz9FtCcVfKNDEpkSyb8zj,J6Gs9ytxP0wNneZ0yVhjsl" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="N4g9bjmp27nMQpNukkVPsd" Location="VL.Skia" Version="2019.1.0-0411-gf6daa4918b" />
+  <DocumentDependency Id="OmSGRoClyqUPl9RggifGZW" Location="../../../VL.Devices.SICK.vl" />
+</Document>
