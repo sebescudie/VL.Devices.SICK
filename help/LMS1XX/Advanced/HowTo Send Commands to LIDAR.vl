@@ -105,7 +105,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="AJ10cIxPRBnNZCcGz22Jwj" Comment="" Bounds="108,421,124,15" ShowValueBox="true" isIOBox="true" Value="SERVICE">
+          <Pad Id="AJ10cIxPRBnNZCcGz22Jwj" Comment="" Bounds="108,421,124,15" ShowValueBox="true" isIOBox="true" Value="AUTHORIZED_CLIENT">
             <p:TypeAnnotation LastCategoryFullName="LMS1XX.LMS1XX" LastSymbolSource="SICK-LMS1XX.dll">
               <Choice Kind="TypeFlag" Name="UserLevel" />
             </p:TypeAnnotation>
@@ -324,7 +324,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Dy5R3ch6tW9OOUaT0gI9W8" Bounds="252,649,118,239" ShowValueBox="true" isIOBox="true" Value="Reads device state. Can be either :&#xD;&#xA;- BUSY&#xD;&#xA;- READY&#xD;&#xA;- ERROR&#xD;&#xA;&#xD;&#xA;The device seems to be BUSY for no reason sometimes, gotta dig that!">
+          <Pad Id="Dy5R3ch6tW9OOUaT0gI9W8" Bounds="252,649,118,265" ShowValueBox="true" isIOBox="true" Value="Reads device state. Can be either :&#xD;&#xA;- BUSY&#xD;&#xA;- READY&#xD;&#xA;- ERROR&#xD;&#xA;&#xD;&#xA;The device is BUSY most of the time, the documentation does not specify what those states mean though.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -333,7 +333,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QrNj0sbztnMNOTxSYqrqVm" Bounds="405,649,118,239" ShowValueBox="true" isIOBox="true" Value="Reads device temperature.&#xD;&#xA;&#xD;&#xA;This one always retrieves the same value, seems weird.&#xD;&#xA;&#xD;&#xA;Gotta dig that also.">
+          <Pad Id="QrNj0sbztnMNOTxSYqrqVm" Bounds="405,649,118,239" ShowValueBox="true" isIOBox="true" Value="Reads device temperature.&#xD;&#xA;&#xD;&#xA;The temperature it returns does not match the one displayed in SICK's software.&#xD;&#xA;&#xD;&#xA;Gotta dig that.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -351,7 +351,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KVFXfID2jIFNaYpk5h2Lue" Bounds="695,649,266,214" ShowValueBox="true" isIOBox="true" Value="Sets the scan frequency and angular resolution at which the device operates.">
+          <Pad Id="KVFXfID2jIFNaYpk5h2Lue" Bounds="695,649,266,214" ShowValueBox="true" isIOBox="true" Value="Sets the scan frequency and angular resolution at which the device operates.&#xD;&#xA;&#xD;&#xA;Available configurations are :&#xD;&#xA;- 50Hz/0.5°&#xD;&#xA;- 25Hz/0.5°&#xD;&#xA;- 25Hz/0.25°">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
