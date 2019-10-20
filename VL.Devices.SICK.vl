@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="NClwVL8Mha6MFL29qaEkbz" LanguageVersion="2019.1.0-0411-gf6daa4918b" Version="0.128">
+<Document xmlns:p="property" Id="NClwVL8Mha6MFL29qaEkbz" LanguageVersion="2019.1.0-0827-g397c3356f1" Version="0.128">
   <NugetDependency Id="GOIIH2OemXtMCmy8azD9aL" Location="VL.CoreLib" Version="2019.1.0-411" />
   <Patch Id="AVNJ2mdLE30MZz7ZCH1beE">
     <Canvas Id="Q5viJTkjnPDLlPyGjl7zWY" DefaultCategory="Devices.SICK" CanvasType="FullCategory">
@@ -60,6 +60,7 @@
                   </p:TypeAnnotation>
                 </Pin>
                 <Pin Id="U4kYIL9f45dPxhKIs4Udk1" Name="Width" Kind="InputPin" />
+                <Pin Id="APStqkVHfZpOqjn7qD4CIh" Name="Phase" Kind="InputPin" />
                 <Pin Id="KFpRox2CcIxPyYIMwbLJjU" Name="Count" Kind="InputPin" />
                 <Pin Id="KATC6nOepdRNF8pm6h6lCu" Name="Output" Kind="OutputPin" />
               </Node>
@@ -556,6 +557,58 @@
                       <Pin Id="Cak6jiYPwYtPXidyn1cEdk" Name="Device Status" Kind="OutputPin" />
                     </Patch>
                   </Node>
+                  <!--
+
+    ************************ RawData (Advanced) ************************
+
+-->
+                  <Node Name="RawData (Advanced)" Bounds="800,579,112,82" Id="T6CuDOEMyTCNZy520BghqC">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="AdbqDShO569MM7PrURmksd">
+                      <Node Bounds="812,611,56,19" AutoConnect="true" Id="EH3tkeaWfEpP5z1buzRsTJ">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="RawData" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="PAgH8ay36wVL4MHQ42PAzq" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="Dml5dJfFHgJPsoi2PLwxEk" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="SOTN0gdjejdO19eGPjQu7Q" Name="Raw Data" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="QztkiEN0LkzNfnI1g88vsa" Name="Input" Kind="InputPin" />
+                      <Pin Id="AVdN3xkrQIMMpzc7y38I9c" Name="Output" Kind="OutputPin" />
+                      <Pin Id="ApPndbv0GjEOiJkFnohFoG" Name="Raw Data" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
+                  <!--
+
+    ************************ RawDataString (Advanced) ************************
+
+-->
+                  <Node Name="RawDataString (Advanced)" Bounds="1010,609,100,50" Id="QM9aCZfVoYrM71IxwBouh2">
+                    <p:NodeReference>
+                      <Choice Kind="OperationDefinition" Name="Operation" />
+                      <FullNameCategoryReference ID="Primitive" />
+                    </p:NodeReference>
+                    <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                    <Patch Id="SsFMiLsFfVEODPkKwkmf0L">
+                      <Node Bounds="1010,609,10,10" AutoConnect="true" Id="Q13vYTrLvdQNIhJ3BeSFaf">
+                        <p:NodeReference LastCategoryFullName="LMS1XX.LMS1XX.LMDScandataResult" LastSymbolSource="SICK-LMS1XX.dll">
+                          <Choice Kind="OperationNode" Name="RawDataString" />
+                          <FullNameCategoryReference ID="LMS1XX.LMS1XX.LMDScandataResult" />
+                        </p:NodeReference>
+                        <Pin Id="BQLY5mFXpW0PPVObjMJyhy" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="UCotOsGxgvIONPXM5BwySM" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="BJRQd8uInZ2LCNaTNFypWT" Name="Raw Data String" Kind="OutputPin" />
+                      </Node>
+                      <Pin Id="VTX1V2ioQp8MX8nAp0FUbb" Name="Input" Kind="InputPin" />
+                      <Pin Id="BJ3xIjClLxlLa0OsZ35PA8" Name="Output" Kind="OutputPin" />
+                      <Pin Id="Vw6wkJ5La84Ply3a3l7INz" Name="Raw Data String" Kind="OutputPin" />
+                    </Patch>
+                  </Node>
                 </Canvas>
                 <ProcessDefinition Id="VjGMWbYdugQLeCgsn5ZXHZ" IsHidden="true">
                   <Fragment Id="PhzRbygunloO281lj1nIRo" Patch="FslcpmZpLyzMisK43bXzDN" />
@@ -563,6 +616,8 @@
                   <Fragment Id="FT5nkTZJvEkQbPEzS9mTLU" Patch="LfSgFUQbB7TOPRgkww0Zqf" />
                   <Fragment Id="GZJwUhsHIXqN06Hl1JF2sm" Patch="AW4IZvGceQNLQzMwjRC4Nk" />
                   <Fragment Id="Pm1ScWTeeyuNs9VP5DoYjd" Patch="C9RS1npB8SNNeMkxXQtcGs" />
+                  <Fragment Id="T9BCR66VnPUMaaMzknKnNX" Patch="T6CuDOEMyTCNZy520BghqC" />
+                  <Fragment Id="CjDcCtwxhm1NeMcI4Kb5HJ" Patch="QM9aCZfVoYrM71IxwBouh2" />
                 </ProcessDefinition>
               </Patch>
             </Node>
