@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.SICK</id>
-    <version>$version$</version>
+    <version>1.0.0</version>
     <title>VL.Devices.SICK</title>
     <authors>sebescudie</authors>
     <owners>sebescudie</owners>
@@ -12,9 +12,9 @@
     <description>A VL plugin to interact with SICK LIDARs</description>
     <tags>lidar vl</tags>
     <dependencies>
-      <dependency id="LMS1XX" version="1.0.0-CI-20190730-133743"/>
+      <dependency id="LMS1XX" version="1.0.0"/>
     </dependencies> 
-  </metadata> 
+  </metadata>
   <files>
     <file src="..\VL.Devices.SICK.vl" target="" exclude="" />
     <file src="..\help\**\*.vl" target="..\help" exclude="" />
